@@ -1,2 +1,2 @@
 # uno.js
-A JS lib that export one function per file based which doesn't even need to be downloaded
+A JS library that exports one function per file, which doesn't even need to be downloaded.
