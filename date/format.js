@@ -1,3 +1,12 @@
+/**
+ * Format dates into a given format
+ * @param {Date} date The date to format. 
+ * @param {string} format The format to format the date into. 
+ * @returns {string} The formatted date.
+ * @example
+ * formatDate(new Date(), 'MM/DD/YYYY HH:mm:ss'); // '01/01/1970 00:00:00'
+ * @author theatom06
+ */
 export default function formatDate(date, format) {
     const map = {
         'MM': ('0' + (date.getMonth() + 1)).slice(-2),

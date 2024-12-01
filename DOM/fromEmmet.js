@@ -1,3 +1,11 @@
+/**
+ * Create an element from an emmet string
+ * @param {string} emmet The emmet string.
+ * @returns {HTMLElement} The created element.
+ * @example
+ * fromEmmet('div#id.class1.class2[attr1=val1 attr2=val2]{text}'); // <div id="id" class="class1 class2" attr1="val1" attr2="val2">text</div>
+ * @author theatom06
+ */
 export default function fromEmmet(emmet){
     let tagName = emmet.split(/[#.]/)[0];
     let id = emmet.match(/#([^.]+)/);
