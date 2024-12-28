@@ -1,4 +1,13 @@
+# SuperElement - DOM
+Create or query a SuperElement.
+
+**Author:** undefined
+
+
+## Code
+```js
 /**
+ * @class
  * SuperElement is a class that wraps around the native DOM element and provides a more intuitive and easy to use API.
  * @example
  * let element = new SuperElement('div');
@@ -506,3 +515,22 @@ export default class SuperElement {
         return this.element;
     }
 }    
+```
+
+## Parameters
+* **emmet** - The emmet string for creating or querying the element.
+* **search** - (optional, false) If true, the emmet string will be used to query an element.
+
+
+## Returns
+* **SuperElement** - The SuperElement object.
+
+
+## Examples
+```js
+let element = new SuperElement('div');
+element.text('Hello, World!').appendTo(document.body);
+element.css('color', 'red');
+element.css('color'); //red
+
+```

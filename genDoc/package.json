@@ -1,0 +1,34 @@
+{
+  "name": "uno.js",
+  "version": "1.0.0",
+  "description": "The mono repo for the uno.js",
+  "main": " ",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "generate-docs": "jsdoc --configure jsdoc.json --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theatom06/uno.js.git"
+  },
+  "keywords": [
+    "uno",
+    "js",
+    "lib",
+    "theatom06"
+  ],
+  "author": "theatom06",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theatom06/uno.js/issues"
+  },
+  "homepage": "https://github.com/theatom06/uno.js#readme",
+  "dependencies": {
+    "jsdoc-to-markdown": "^9.1.1"
+  },
+  "devDependencies": {
+    "@types/jsdoc-to-markdown": "^7.0.6"
+  }
+}
