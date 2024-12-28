@@ -5,7 +5,7 @@ const path = require('path');
 const { exec } = require('child_process');
 
 const libDir = path.join(__dirname, '../lib');
-const docsDir = path.join(__dirname, '../docs');
+const docsDir = path.join(__dirname, '../documentation');
 console.log('Generating documentation...');
 console.log('Library directory:', libDir);
 console.log('Documentation directory:', docsDir);
@@ -103,7 +103,12 @@ function processFile(relativeFilePath) {
 
         const docFilePath = path.join(docsDir, relativeFilePath.replace('.js', '.md'));
 
-        //fs.writeFileSync(docFilePath, handleDocumentation(JSON.parse(stdout)[0], relativeFilePath, fs.readFileSync(filePath).toString()));
+        fs.writeFileSync(docFilePath, handleDocumentation(JSON.parse(stdout)[0], relativeFilePath, fs.readFileSync(filePath).toString()));
+        structure[path.dirname(relativeFilePath)].forEach(file => {
+            if(file.file == path.basename(relativeFilePath)) {
+                file.description = JSON.parse(stdout)[0].description;
+            }
+        });
         console.log('   Generated Documentation file:', path.relative(docsDir, docFilePath));
     });
 
@@ -128,11 +133,23 @@ function processDir(dir) {
             processDir(filePath);
         } else {
             processFile(path.relative(libDir, filePath));
-            structure[path.relative(libDir, dir)].push(file);
+            structure[path.relative(libDir, dir)].push({file: file, description: ''});
         }
     });
 }
 
 processDir(libDir);
-console.log('\nStructure:', structure);
-console.log('\nDocumentation generated successfully!');
+
+process.on('exit', () => {
+    Object.keys(structure).forEach(folder => {
+        const readmeContent = `# ${folder.charAt(0).toUpperCase() + folder.slice(1)}\n\n` +
+                               `A set of functions related to ${folder}.\n\n` +
+                              `## Functions\n\n` +
+                              structure[folder].map(file => `* [**${file.file}**](./${file.file.replace('.js', '.md')}) - ${file.description}`).join('\n') + '\n';
+        const readmePath = path.join(docsDir, folder, 'README.md');
+        fs.writeFileSync(readmePath, readmeContent);
+        console.log('   Generated README file:', path.relative(docsDir, readmePath));
+    });
+    
+    console.log('\nDocumentation generated successfully!');
+});
