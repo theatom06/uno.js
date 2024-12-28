@@ -3,6 +3,11 @@ Finds the intersection between two arra
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import Intersection from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/TITLE';
+```
 
 ## Code
 ```js

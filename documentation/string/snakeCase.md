@@ -3,6 +3,11 @@ Convert a string to snake case.
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import SnakeCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+```
 
 ## Code
 ```js

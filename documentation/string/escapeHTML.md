@@ -3,6 +3,11 @@ Escapes special characters in a string to prevent XSS attacks via HTML.
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import EscapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+```
 
 ## Code
 ```js

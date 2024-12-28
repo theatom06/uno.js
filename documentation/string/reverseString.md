@@ -3,6 +3,11 @@ Reverse a string.
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import ReverseString from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+```
 
 ## Code
 ```js

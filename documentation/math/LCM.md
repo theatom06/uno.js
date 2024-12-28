@@ -3,6 +3,11 @@ Find the LCM(Least Common Multiple) of two numbers
 
 **Author:** undefined
 
+## Import 
+
+```js
+import LCM from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/TITLE';
+```
 
 ## Code
 ```js

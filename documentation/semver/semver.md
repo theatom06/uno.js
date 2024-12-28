@@ -3,6 +3,11 @@ Parses a version string and returns metadata about its components.
 
 **Author:** theatom06 node-semver
 
+## Import 
+
+```js
+import Semver from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/TITLE';
+```
 
 ## Code
 ```js

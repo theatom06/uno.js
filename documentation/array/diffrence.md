@@ -3,6 +3,11 @@ Returns the difference between two or more arrays.
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import Diffrence from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/TITLE';
+```
 
 ## Code
 ```js

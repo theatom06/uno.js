@@ -3,6 +3,11 @@ Compares two version strings and returns true if the first version is less than 
 
 **Author:** theatom06 node-semver
 
+## Import 
+
+```js
+import Lt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/TITLE';
+```
 
 ## Code
 ```js

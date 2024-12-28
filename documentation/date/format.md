@@ -3,6 +3,11 @@ Format dates into a given format
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import Format from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Date/TITLE';
+```
 
 ## Code
 ```js

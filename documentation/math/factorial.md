@@ -3,6 +3,11 @@ Finds the factorial of a number
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import Factorial from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/TITLE';
+```
 
 ## Code
 ```js

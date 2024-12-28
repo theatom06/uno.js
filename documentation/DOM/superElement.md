@@ -3,6 +3,11 @@ Create or query a SuperElement.
 
 **Author:** undefined
 
+## Import 
+
+```js
+import SuperElement from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/TITLE';
+```
 
 ## Code
 ```js

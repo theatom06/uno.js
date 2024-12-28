@@ -3,6 +3,11 @@ Convert a string to kebab case.
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import KebabCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+```
 
 ## Code
 ```js

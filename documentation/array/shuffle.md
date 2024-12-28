@@ -3,6 +3,11 @@ Shuffles an array randomly
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import Shuffle from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/TITLE';
+```
 
 ## Code
 ```js

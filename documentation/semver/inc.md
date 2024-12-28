@@ -3,6 +3,11 @@ Increments a version string based on the release type.
 
 **Author:** theatom06 node-semver
 
+## Import 
+
+```js
+import Inc from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/TITLE';
+```
 
 ## Code
 ```js

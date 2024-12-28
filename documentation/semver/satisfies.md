@@ -3,6 +3,11 @@ Checks if a version satisfies a range.
 
 **Author:** theatom06 node-semver
 
+## Import 
+
+```js
+import Satisfies from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/TITLE';
+```
 
 ## Code
 ```js

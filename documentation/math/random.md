@@ -3,6 +3,11 @@ Generates a cryptographically secure random integer in the range [min, max).
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import Random from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/TITLE';
+```
 
 ## Code
 ```js

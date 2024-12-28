@@ -3,6 +3,11 @@ Create an element from an emmet string
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import FromEmmet from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/TITLE';
+```
 
 ## Code
 ```js

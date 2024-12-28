@@ -3,6 +3,11 @@ Unescapes HTML entities in a given string.
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import UnescapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+```
 
 ## Code
 ```js

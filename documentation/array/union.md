@@ -3,6 +3,11 @@ Creates a union of arrays
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import Union from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/TITLE';
+```
 
 ## Code
 ```js

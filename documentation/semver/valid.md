@@ -3,6 +3,11 @@ Checks if a version string is a valid semver version.
 
 **Author:** theatom06 node-semver
 
+## Import 
+
+```js
+import Valid from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/TITLE';
+```
 
 ## Code
 ```js

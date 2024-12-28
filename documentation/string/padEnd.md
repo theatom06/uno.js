@@ -3,6 +3,11 @@ Pads the current string with another string until the resulting string reaches t
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import PadEnd from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+```
 
 ## Code
 ```js

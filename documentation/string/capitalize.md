@@ -3,6 +3,11 @@ Capitalize the first letter of a string.
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import Capitalize from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+```
 
 ## Code
 ```js

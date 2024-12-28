@@ -3,6 +3,11 @@ Creates an instance of complexNumber.
 
 **Author:** undefined
 
+## Import 
+
+```js
+import ComplexNumber from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/TITLE';
+```
 
 ## Code
 ```js

@@ -3,6 +3,11 @@ Flattens an array recursively.
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import Flatten from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/TITLE';
+```
 
 ## Code
 ```js

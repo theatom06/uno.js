@@ -3,6 +3,11 @@ Sorts an array of version strings in ascending order.
 
 **Author:** theatom06 node-semver
 
+## Import 
+
+```js
+import Sort from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/TITLE';
+```
 
 ## Code
 ```js

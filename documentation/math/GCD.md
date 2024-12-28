@@ -3,6 +3,11 @@ Find the GCD(Greatest Common Divisor) of two numbers
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import GCD from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/TITLE';
+```
 
 ## Code
 ```js

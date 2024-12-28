@@ -3,6 +3,11 @@ Converts a string to camelcase.
 
 **Author:** theatom06
 
+## Import 
+
+```js
+import CamelCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+```
 
 ## Code
 ```js
