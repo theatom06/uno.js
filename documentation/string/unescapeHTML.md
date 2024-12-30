@@ -6,7 +6,7 @@ Unescapes HTML entities in a given string.
 ## Import 
 
 ```js
-import UnescapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+import UnescapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/UnescapeHTML';
 ```
 
 ## Code

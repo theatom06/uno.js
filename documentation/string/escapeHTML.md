@@ -6,7 +6,7 @@ Escapes special characters in a string to prevent XSS attacks via HTML.
 ## Import 
 
 ```js
-import EscapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+import EscapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/EscapeHTML';
 ```
 
 ## Code

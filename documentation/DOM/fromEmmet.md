@@ -6,7 +6,7 @@ Create an element from an emmet string
 ## Import 
 
 ```js
-import FromEmmet from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/TITLE';
+import FromEmmet from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/FromEmmet';
 ```
 
 ## Code

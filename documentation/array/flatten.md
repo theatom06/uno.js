@@ -6,7 +6,7 @@ Flattens an array recursively.
 ## Import 
 
 ```js
-import Flatten from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/TITLE';
+import Flatten from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/Flatten';
 ```
 
 ## Code

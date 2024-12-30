@@ -6,7 +6,7 @@ Checks if a version string is a valid semver version.
 ## Import 
 
 ```js
-import Valid from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/TITLE';
+import Valid from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/Valid';
 ```
 
 ## Code

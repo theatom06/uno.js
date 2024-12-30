@@ -6,7 +6,7 @@ Generates a cryptographically secure random integer in the range [min, max).
 ## Import 
 
 ```js
-import Random from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/TITLE';
+import Random from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/Random';
 ```
 
 ## Code

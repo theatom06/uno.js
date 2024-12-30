@@ -6,7 +6,7 @@ Pads the current string with another string until the resulting string reaches t
 ## Import 
 
 ```js
-import PadStart from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+import PadStart from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/PadStart';
 ```
 
 ## Code

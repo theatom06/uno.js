@@ -6,7 +6,7 @@ Shuffles an array randomly
 ## Import 
 
 ```js
-import Shuffle from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/TITLE';
+import Shuffle from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/Shuffle';
 ```
 
 ## Code

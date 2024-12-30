@@ -6,7 +6,7 @@ Creates an instance of complexNumber.
 ## Import 
 
 ```js
-import ComplexNumber from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/TITLE';
+import ComplexNumber from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/ComplexNumber';
 ```
 
 ## Code

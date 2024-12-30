@@ -6,7 +6,7 @@ Sorts an array of version strings in ascending order.
 ## Import 
 
 ```js
-import Sort from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/TITLE';
+import Sort from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/Sort';
 ```
 
 ## Code

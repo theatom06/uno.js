@@ -6,7 +6,7 @@ Converts a string to camelcase.
 ## Import 
 
 ```js
-import CamelCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+import CamelCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/CamelCase';
 ```
 
 ## Code

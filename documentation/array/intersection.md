@@ -6,7 +6,7 @@ Finds the intersection between two arra
 ## Import 
 
 ```js
-import Intersection from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/TITLE';
+import Intersection from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/Intersection';
 ```
 
 ## Code

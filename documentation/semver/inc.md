@@ -6,7 +6,7 @@ Increments a version string based on the release type.
 ## Import 
 
 ```js
-import Inc from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/TITLE';
+import Inc from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/Inc';
 ```
 
 ## Code

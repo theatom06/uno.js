@@ -6,7 +6,7 @@ Splits an array into chunks of a specified size.
 ## Import 
 
 ```js
-import ToChunk from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/TITLE';
+import ToChunk from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/ToChunk';
 ```
 
 ## Code

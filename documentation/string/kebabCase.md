@@ -6,7 +6,7 @@ Convert a string to kebab case.
 ## Import 
 
 ```js
-import KebabCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+import KebabCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/KebabCase';
 ```
 
 ## Code

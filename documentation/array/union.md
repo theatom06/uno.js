@@ -6,7 +6,7 @@ Creates a union of arrays
 ## Import 
 
 ```js
-import Union from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/TITLE';
+import Union from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/Union';
 ```
 
 ## Code

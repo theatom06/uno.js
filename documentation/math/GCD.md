@@ -6,7 +6,7 @@ Find the GCD(Greatest Common Divisor) of two numbers
 ## Import 
 
 ```js
-import GCD from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/TITLE';
+import GCD from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/GCD';
 ```
 
 ## Code

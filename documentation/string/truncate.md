@@ -6,7 +6,7 @@ Truncate a string to a certain length and add '...' to the end
 ## Import 
 
 ```js
-import Truncate from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+import Truncate from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/Truncate';
 ```
 
 ## Code

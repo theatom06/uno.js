@@ -6,7 +6,7 @@ Format dates into a given format
 ## Import 
 
 ```js
-import Format from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Date/TITLE';
+import Format from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Date/Format';
 ```
 
 ## Code

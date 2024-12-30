@@ -6,7 +6,7 @@ Compares two version strings and returns true if the first version is greater th
 ## Import 
 
 ```js
-import Gt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/TITLE';
+import Gt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/Gt';
 ```
 
 ## Code

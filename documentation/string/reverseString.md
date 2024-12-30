@@ -6,7 +6,7 @@ Reverse a string.
 ## Import 
 
 ```js
-import ReverseString from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+import ReverseString from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/ReverseString';
 ```
 
 ## Code

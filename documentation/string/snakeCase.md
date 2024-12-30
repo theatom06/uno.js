@@ -6,7 +6,7 @@ Convert a string to snake case.
 ## Import 
 
 ```js
-import SnakeCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+import SnakeCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/SnakeCase';
 ```
 
 ## Code

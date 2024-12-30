@@ -6,7 +6,7 @@ Removes all duplicates from a array
 ## Import 
 
 ```js
-import Unique from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/TITLE';
+import Unique from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/Unique';
 ```
 
 ## Code

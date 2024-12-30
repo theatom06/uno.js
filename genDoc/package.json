@@ -1,13 +1,10 @@
 {
   "name": "uno.js",
   "version": "1.0.0",
-  "description": "The mono repo for the uno.js",
-  "main": " ",
-  "directories": {
-    "lib": "lib"
-  },
+  "description": "The documentation generator for uno.js",
+  "main": "index.js",
   "scripts": {
-    "generate-docs": "jsdoc --configure jsdoc.json --verbose"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

@@ -6,7 +6,7 @@ Create or query a SuperElement.
 ## Import 
 
 ```js
-import SuperElement from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/TITLE';
+import SuperElement from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/SuperElement';
 ```
 
 ## Code

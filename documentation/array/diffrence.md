@@ -6,7 +6,7 @@ Returns the difference between two or more arrays.
 ## Import 
 
 ```js
-import Diffrence from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/TITLE';
+import Diffrence from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/Diffrence';
 ```
 
 ## Code

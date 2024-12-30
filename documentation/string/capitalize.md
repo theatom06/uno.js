@@ -6,7 +6,7 @@ Capitalize the first letter of a string.
 ## Import 
 
 ```js
-import Capitalize from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/TITLE';
+import Capitalize from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/Capitalize';
 ```
 
 ## Code

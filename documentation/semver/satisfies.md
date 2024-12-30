@@ -6,7 +6,7 @@ Checks if a version satisfies a range.
 ## Import 
 
 ```js
-import Satisfies from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/TITLE';
+import Satisfies from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/Satisfies';
 ```
 
 ## Code
