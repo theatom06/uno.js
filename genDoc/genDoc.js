@@ -57,6 +57,7 @@ function handleDocumentation(doc, relativeFilePath, code) {
     let md = docTemplate
                 .replace('TITLE', obj.title)
                 .replace('TITLE', obj.title)
+                .replace('TITLE', obj.title)
                 .replace('TYPE', obj.filefolder)
                 .replace('TYPE', obj.filefolder)
                 .replace('DESCRIPTION', obj.description)
