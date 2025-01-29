@@ -6,7 +6,7 @@ Generates cryptographically secure random bytes. Uses the Web Crypto API if avai
 ## Import 
 
 ```js
-import RandomBytes from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/RandomBytes';
+import randomBytes from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/randomBytes';
 ```
 
 ## Code
@@ -55,3 +55,5 @@ export default function secureRandomBytes(size) {
 secureRandomBytes(16); //Uint8Array(11) [104, 190,  56, 142, 8, 162, 238, 236, 247, 171, 150]
 
 ```
+
+Hash: 7486b5a1da8cd9fc511052157a681ae62a254b3ce875b007793aba714ff804e1

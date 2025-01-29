@@ -6,7 +6,7 @@ Sorts an array of version strings in ascending order.
 ## Import 
 
 ```js
-import Sort from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/Sort';
+import sort from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/sort';
 ```
 
 ## Code
@@ -49,3 +49,5 @@ export default function sort(versions, reverse = false){
 sort(['1.1.0', '1.0.0', '1.2.0']); // Output: ['1.0.0', '1.1.0', '1.2.0']
 
 ```
+
+Hash: 443ef2cee83b26c98278c814566c347bef104a0676afbd3c9e7dc1e1ab8887bc

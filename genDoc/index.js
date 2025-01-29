@@ -1,51 +1,44 @@
 #!/usr/bin/env node
-//@ts-check
+
 const fs = require('fs');
 const path = require('path');
-const { exec } = require('child_process');
+const {
+    exec
+} = require('child_process');
+const crypto = require('crypto');
 
 const libDir = path.join(__dirname, '../lib');
 const docsDir = path.join(__dirname, '../documentation');
+let folderStructure = {};
+
+console.log('Uno.js Documentation Generator');
+console.log('Version: 1.0.0');
+console.log('Author: theatom06');
+console.log('License: Carbon License v2');
+console.log('----------------------------------');
+
+function fileHash(code) {
+    const hash = crypto.createHash('sha256').update(code).digest('hex');
+    return hash;
+}
+
 console.log('Generating documentation...');
 console.log('Library directory:', libDir);
 console.log('Documentation directory:', docsDir);
 
-let docTemplate = `# TITLE - TYPE
-DESCRIPTION
+let functionTemplate = fs.readFileSync(path.join(__dirname, './functionTemplate.md'), 'utf8');
+let constructTemplate = fs.readFileSync(path.join(__dirname, './constructTemplate.md'), 'utf8');
 
-**Author:** AUTHOR
+function handleFunctions(doc, filePath) {
+    let code = fs.readFileSync(filePath, 'utf8');
+    let relativeFilePath = path.relative(libDir, filePath);
 
-## Import 
-
-\`\`\`js
-import TITLE from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/TYPE/TITLE';
-\`\`\`
-
-## Code
-\`\`\`js
-CODE
-\`\`\`
-
-## Parameters
-PARAMS
-
-## Returns
-RETURNS
-
-## Examples
-\`\`\`js
-EXAMPLES
-\`\`\`
-`
-
-let structure = {};
-
-function handleDocumentation(doc, relativeFilePath, code) {
     const filename = path.basename(relativeFilePath).replace('.js', '');
     const filefolder = path.dirname(relativeFilePath);
+
     let obj = {
-        title: filename.charAt(0).toUpperCase() + filename.slice(1),
-        filefolder: filefolder.charAt(0).toUpperCase() + filefolder.slice(1),
+        title: filename,
+        filefolder: filefolder,
         description: doc.description,
         params: doc.params,
         returns: doc.returns,
@@ -54,15 +47,20 @@ function handleDocumentation(doc, relativeFilePath, code) {
         code: code
     }
 
-    let md = docTemplate
-                .replaceAll('TITLE', obj.title)
-                .replaceAll('TYPE', obj.filefolder)
-                .replace('DESCRIPTION', obj.description)
-                .replace('AUTHOR', obj.author)
-                .replace('CODE', obj.code);
+    let md = functionTemplate
+        .replace('TITLE', (obj.title.charAt(0).toUpperCase() + obj.title.slice(1)))
+        .replaceAll('TITLE', obj.title)
+        .replaceAll('TYPE', obj.filefolder.charAt(0).toUpperCase() + obj.filefolder.slice(1))
+        .replaceAll('TYPE', obj.filefolder)
+        .replaceAll('DESCRIPTION', obj.description)
+        .replaceAll('AUTHOR', obj.author)
+        .replaceAll('CODE', obj.code)
+        .replaceAll('HASH', fileHash(code));
 
-    if(!obj.author) {
-        md = md.replace('AUTHOR', 'theatom06');
+
+
+    if (!obj.author) {
+        md = md.replaceAll('AUTHOR', 'theatom06');
     }
 
     if (obj.params) {
@@ -93,7 +91,73 @@ function handleDocumentation(doc, relativeFilePath, code) {
         md = md.replace('EXAMPLES', examples);
     }
 
-    return md;
+    fs.writeFileSync(path.join(docsDir, relativeFilePath.replace('.js', '.md')), md);
+}
+
+function handleConstructs(doc, filePath) {
+    let relativeFilePath = path.relative(libDir, filePath);
+
+    let md = constructTemplate
+        .replaceAll('TITLE', path.basename(relativeFilePath).replace('.js', '').charAt(0).toUpperCase() + path.basename(relativeFilePath).replace('.js', '').slice(1))
+        .replaceAll('TYPE', path.dirname(relativeFilePath).charAt(0).toUpperCase() + path.dirname(relativeFilePath).slice(1))
+        .replaceAll('AUTHOR', 'theatom06')
+        .replaceAll('DESCRIPTION', doc.description)
+        .replaceAll('HASH', fileHash(fs.readFileSync(filePath)));
+
+    let obj = {
+        params: doc.params,
+        returns: doc.returns,
+        examples: doc.examples
+    }
+
+    if (obj.params) {
+        let params = '';
+        obj.params.forEach(param => {
+            params += `* **${param.name}** - ${param.description}\n`;
+        });
+        md = md.replace('PARAMS', params);
+    } else {
+        md = md.replace('PARAMS', '').replace('## Parameters', '');
+    }
+
+    if (obj.returns) {
+        let returns = '';
+        obj.returns.forEach(ret => {
+            returns += `* **${ret.type.names[0]}** - ${ret.description}\n`;
+        });
+        md = md.replace('RETURNS', returns);
+    } else {
+        md = md.replace('RETURNS', '').replace('## Returns', '');
+    }
+
+    if (obj.examples) {
+        let examples = '';
+        obj.examples.forEach(example => {
+            examples += `${example}\n`;
+        });
+        md = md.replace('EXAMPLES', examples);
+    }
+
+    exec(`npx jsdoc2md  ${filePath}`, (err, stdout, stderr) => {
+        if (err) {
+            console.error(err);
+            console.log(filePath)
+            return;
+        }
+
+        md = md.replace('JSDOC2MDDOC', stdout);
+        md = md.split('## ');
+        md.forEach((m, i) => {
+            if (m.startsWith('Function')) {
+                md.splice(i, 1);
+            }
+        });
+
+        md = md.join('## ');
+
+
+        fs.writeFileSync(path.join(docsDir, relativeFilePath.replace('.js', '.md')), md);
+    });
 }
 
 function processFile(relativeFilePath) {
@@ -106,15 +170,30 @@ function processFile(relativeFilePath) {
             return;
         }
 
-        const docFilePath = path.join(docsDir, relativeFilePath.replace('.js', '.md'));
+        let doc = JSON.parse(stdout).find(d => d.id === 'module.exports');
 
-        fs.writeFileSync(docFilePath, handleDocumentation(JSON.parse(stdout)[0], relativeFilePath, fs.readFileSync(filePath).toString()));
-        structure[path.dirname(relativeFilePath)].forEach(file => {
-            if(file.file == path.basename(relativeFilePath)) {
+        if (!doc) {
+            console.log('No documentation found for', filePath);
+            return;
+        }
+
+        if (!doc.kind) {
+            console.log('No kind found for', filePath);
+            doc.kind = 'function';
+        }
+
+        if (doc.kind == 'class') {
+            handleConstructs(doc, filePath);
+        } else {
+            handleFunctions(doc, filePath);
+        }
+
+        folderStructure[path.dirname(relativeFilePath)].forEach(file => {
+            if (file.file == path.basename(relativeFilePath)) {
                 file.description = JSON.parse(stdout)[0].description;
             }
         });
-        console.log('   Generated Documentation file:', path.relative(docsDir, docFilePath));
+        console.log('   Generated Documentation file:', path.relative(docsDir, relativeFilePath.replace('.js', '.md')));
     });
 
 }
@@ -127,8 +206,8 @@ function processDir(dir) {
         fs.mkdirSync(path.join(docsDir, path.relative(libDir, dir)));
     }
 
-    if(path.relative(libDir, dir) != '')
-        structure[path.relative(libDir, dir)] = [];
+    if (path.relative(libDir, dir) != '')
+        folderStructure[path.relative(libDir, dir)] = [];
 
 
     files.forEach(file => {
@@ -138,7 +217,10 @@ function processDir(dir) {
             processDir(filePath);
         } else {
             processFile(path.relative(libDir, filePath));
-            structure[path.relative(libDir, dir)].push({file: file, description: ''});
+            folderStructure[path.relative(libDir, dir)].push({
+                file: file,
+                description: ''
+            });
         }
     });
 }
@@ -146,15 +228,15 @@ function processDir(dir) {
 processDir(libDir);
 
 process.on('exit', () => {
-    Object.keys(structure).forEach(folder => {
+    Object.keys(folderStructure).forEach(folder => {
         const readmeContent = `# ${folder.charAt(0).toUpperCase() + folder.slice(1)}\n\n` +
-                               `A set of functions related to ${folder}.\n\n` +
-                              `## Functions\n\n` +
-                              structure[folder].map(file => `* [**${file.file}**](./${file.file.replace('.js', '.md')}) - ${file.description}`).join('\n') + '\n';
+            `A set of functions related to ${folder}.\n\n` +
+            `## Functions\n\n` +
+            folderStructure[folder].map(file => `* [**${file.file}**](./${file.file.replace('.js', '.md')}) - ${file.description}`).join('\n') + '\n';
         const readmePath = path.join(docsDir, folder, 'README.md');
         fs.writeFileSync(readmePath, readmeContent);
         console.log('   Generated README file:', path.relative(docsDir, readmePath));
     });
-    
+
     console.log('\nDocumentation generated successfully!');
 });

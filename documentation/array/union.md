@@ -6,7 +6,7 @@ Creates a union of arrays
 ## Import 
 
 ```js
-import Union from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/Union';
+import union from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/union';
 ```
 
 ## Code
@@ -37,3 +37,5 @@ export default function union(...arrays){
 union([1, 2, 3], [2, 3, 4], [3, 4, 5]); // Returns [1, 2, 3, 4, 5]
 
 ```
+
+Hash: 3c0498db654151ff1a1cd7cc454b1e7513b79b3c8021f2b78ee5dcc451d5b160

@@ -6,7 +6,7 @@ Finds the factorial of a number
 ## Import 
 
 ```js
-import Factorial from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/Factorial';
+import factorial from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/factorial';
 ```
 
 ## Code
@@ -40,3 +40,5 @@ export default function factorial(n) {
 factorial(5); // 120
 
 ```
+
+Hash: bc1baea395d6a569d528bf805c431b94a5eb12224c30f7e593004c8ccafed2ef

@@ -1,15 +1,16 @@
 # Uno.js Mono Repo
-A JS library that exports one function per file, which doesn't even need to be downloaded.
+Uno.js is a JavaScript library that offers the convenience of exporting one function per file without the need for downloading the entire library.
 
-This library exports one function per file, which means that you can import only the functions you need, and not the whole library. This is useful for reducing the size of your bundle, and for making your code more readable.
+By exporting individual functions, Uno.js allows you to import only the specific functions you require, resulting in a smaller bundle size and improved code readability.
 
-The documentation for it is built from the source code, so you can always be sure that it's up to date, via the `genDocs` directory.
+The documentation for Uno.js is automatically generated from the source code, ensuring that it is always up to date. You can find the documentation in the `genDocs` directory.
 
-**Note:** This is a mono repo for the Uno.js library. If you want documentation for a specific function, you can head over to the [Documentation](https://github.com/theatom06/uno.js/blob/main/documentation/README.md).
+Please note that this repository serves as a mono repo for the Uno.js library. If you need documentation for a particular function, you can visit the [Documentation](https://github.com/theatom06/uno.js/blob/main/documentation/README.md) section.
 
-This repo has four main directories:
+The repository consists of four main directories:
 
-- `docs`: Contains the under construction documentation website for the library.
-- `documentation`: Contains the documentation for the library.
-- `genDocs`: Contains the docuemntation generator for the library.
-- `lib`: Contains the source code for the library.
+- `documentation`: Contains the comprehensive library documentation.
+- `lib`: Contains the library's source code.
+- `genDocs`: Houses the documentation generator for the library.
+- `docs`: Contains the documentation website, currently under construction.
+

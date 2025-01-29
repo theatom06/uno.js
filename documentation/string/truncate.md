@@ -6,7 +6,7 @@ Truncate a string to a certain length and add '...' to the end
 ## Import 
 
 ```js
-import Truncate from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/Truncate';
+import truncate from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/truncate';
 ```
 
 ## Code
@@ -41,3 +41,5 @@ export default function truncate(str, length, end = '...') {
 truncate('The quick brown fox jumps over the lazy dog', 20); // 'The quick brown fox...'
 
 ```
+
+Hash: 76b6e830a9dec76bf25677a0f301c83722ae84a57571efd91c4d459d88fe8ac4

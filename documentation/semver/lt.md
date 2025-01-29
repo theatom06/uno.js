@@ -6,7 +6,7 @@ Compares two version strings and returns true if the first version is less than 
 ## Import 
 
 ```js
-import Lt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/Lt';
+import lt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/lt';
 ```
 
 ## Code
@@ -75,3 +75,5 @@ export default function lt(version1, version2){
 lt('1.2.3', '1.2.4'); // Output: true
 
 ```
+
+Hash: d8051f230112d7ac659ebfdaccd04d3235f693034c6d2e71bce83dce4240099e

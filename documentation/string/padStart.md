@@ -6,7 +6,7 @@ Pads the current string with another string until the resulting string reaches t
 ## Import 
 
 ```js
-import PadStart from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/PadStart';
+import padStart from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/padStart';
 ```
 
 ## Code
@@ -41,3 +41,5 @@ export default function padStart(str, targetLength, padString) {
 padStart('5', 2, '0'); // '05'
 
 ```
+
+Hash: f4b4f831b77265fd6d6c3df91dcdc1cf9ca6f22c16d76baf7fa8696c42142dda

@@ -6,7 +6,7 @@ Finds the intersection between two arra
 ## Import 
 
 ```js
-import Intersection from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/Intersection';
+import intersection from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/intersection';
 ```
 
 ## Code
@@ -42,3 +42,5 @@ export default function intersection(...arrays){
 intersection([1, 2, 3], [2, 3, 4]) // [2, 3]
 
 ```
+
+Hash: cd4fcd4855983ab8e8f6742be6668053339ce223381469ee0a8bd8629b5692cd

@@ -42,3 +42,5 @@ export default function GCD(a, b) {
 GCD(12, 8); // 4
 
 ```
+
+Hash: 1b21ea79fe892dd058765630c198e1dd099427a5c4ce9fe2dc374068780d3901

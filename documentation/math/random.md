@@ -6,7 +6,7 @@ Generates a cryptographically secure random integer in the range [min, max).
 ## Import 
 
 ```js
-import Random from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/Random';
+import random from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/random';
 ```
 
 ## Code
@@ -48,3 +48,5 @@ export default function randomInt(min, max) {
 randomInt(1, 10); // => 4
 
 ```
+
+Hash: 080ea5eaba8d9241cb47c4787af04e55045b9b8846724b7ead6aa59186a28ee9

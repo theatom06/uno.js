@@ -6,7 +6,7 @@ Increments a version string based on the release type.
 ## Import 
 
 ```js
-import Inc from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/Inc';
+import inc from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/inc';
 ```
 
 ## Code
@@ -58,3 +58,5 @@ export default function inc(version, release){
 inc('1.2.3', 'major'); // Output: '2.0.0'
 
 ```
+
+Hash: 0a7e2927aa5f273a8214797fdced6d1f0caf9d483253c0776a32b5f6f7de582c

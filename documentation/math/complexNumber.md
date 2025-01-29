@@ -1,168 +1,135 @@
 # ComplexNumber - Math
-Creates an instance of complexNumber.
+A constructor for dealing with omplex number.
 
-**Author:** undefined
+**Author:** theatom06
 
-## Import 
+## Import
 
 ```js
 import ComplexNumber from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/ComplexNumber';
 ```
 
 ## Code
+This is a construct so the code is too long to be displayed here.
+If you want to see the code, you can check it [here](https://github.com/theatom06/uno.js/blob/main/lib/Math/ComplexNumber.js).
+
+## add(other) ⇒ <code>complexNumber</code>
+Adds two complex numbers.
+
+**Kind**: global function  
+**Returns**: <code>complexNumber</code> - The sum of the two complex numbers.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| other | <code>complexNumber</code> | The other complex number to add. |
+
+**Example**  
 ```js
-/**
- * A constructor for dealing with omplex number.
- * @example
- * let z = new complexNumber(3, 4);
- * let x = complexNumber.fromString('3 + 4i');
- * let y = z.add(x);
- * console.log(y.toPolar().toString());
- * @author theatom06
- */
-class complexNumber {
-    /**
-     * Creates an instance of complexNumber.
-     * @param {number} real The real part of the complex number.
-     * @param {number} imaginary The imaginary part of the complex number.
-     * @example
-     * let z = new complexNumber(3, 4);
-     */
-    constructor(real, imaginary) {
-        this.real = real;
-        this.imaginary = imaginary;
-    }
-
-    /**
-     * Adds two complex numbers.
-     * @param {complexNumber} other The other complex number to add.
-     * @returns {complexNumber} The sum of the two complex numbers.
-     * @example
-     * new complexNumber(3, 4).add(new complexNumber(1, 2)); // 4 + 6i
-    */
-    add(other) {
-        return new complexNumber(
-            this.real + other.real,
-            this.imaginary + other.imaginary
-        );
-    }
-
-    /**
-     * Subtracts two complex numbers.
-     * @param {complexNumber} other The other complex number to be subtraced.
-     * @returns {complexNumber} The diffrence of the two complex numbers.
-     * @example
-     * new complexNumber(3, 4).subtract(new complexNumber(1, 2)); // 2 + 2i
-    */
-    subtract(other) {
-        return new complexNumber(
-            this.real - other.real,
-            this.imaginary - other.imaginary
-        );
-    }
-
-    /**
-     * Multiplies two complex numbers.
-     * @param {complexNumber} other The other complex number to be multiplied.
-     * @returns {complexNumber} The product of the two complex numbers.
-     * @example
-     * new complexNumber(3, 4).multiply(new complexNumber(2, 0)); // 6 + 8i
-     */
-    multiply(other) {
-        return new complexNumber(
-            this.real * other.real - this.imaginary * other.imaginary,
-            this.real * other.imaginary + this.imaginary * other.real
-        );
-    }
-
-    /**
-     * Divides two complex numbers.
-     * @param {complexNumber} other The other complex number to be divided.
-     * @returns {complexNumber} The quotient of the two complex numbers.
-     * @example
-     * new complexNumber(3, 4).divide(new complexNumber(2, 0)); // 1.5 + 2i
-     */
-    divide(other) {
-        const denominator = other.real ** 2 + other.imaginary ** 2;
-        return new complexNumber(
-            (this.real * other.real + this.imaginary * other.imaginary) / denominator,
-            (this.imaginary * other.real - this.real * other.imaginary) / denominator
-        );
-    }
-
-    /**
-     * Returns a string representation of the complex number.
-     * @returns {string} The string representation of the complex number.
-     * @example
-     * new complexNumber(3, 4).toString(); // 3 + 4i
-     */
-    toString() {
-        let sign = (this.imaginary < 0)? "-" : "+";
-        let i = (this.imaginary < 0)? (this.imaginary * -1) : this.imaginary;
-        return `${this.real} ${sign} ${(i === 1)? '' : i }i`;
-    }
-
-    /**
-     * Converts the complex number to polar form.
-     * @returns {complexNumber} The polar form of the complex number.
-     * @example 
-     * new complexNumber(3, 4).toPolar(); // 5 + 0.9272952180016122i
-     */
-    toPolar() {
-        let r = Math.sqrt(this.real ** 2 + this.imaginary ** 2);
-        let theta = Math.atan(this.imaginary / this.real);
-        return new complexNumber(r, theta);
-    }
-
-    /**
-     * Creates a complex number from polar coordinates.
-     * @param {number} r The magnitude of the complex number.
-     * @param {number} theta The angle of the complex number.
-     * @returns {complexNumber} The complex number.
-     * @example
-     * complexNumber.fromPolar(5, Math.PI / 3); // 2.5 + 4.330127018922194i
-     */
-    static fromPolar(r, theta) {
-        return new complexNumber(
-            r * Math.cos(theta),
-            r * Math.sin(theta)
-        );
-    }
-
-    /**
-     * Creates a complex number from a string.
-     * @param {string} str The string representation of the complex number.
-     * @returns {complexNumber} The complex number.
-     * @example
-     * complexNumber.fromString('3 + 4i'); // 3 + 4i
-     */
-    static fromString(str) {
-        let parts = str.split(' ');
-        let real = parseFloat(parts[0]);
-        if(parts[2] == 'i')
-            return new complexNumber(real, 1);
-        
-        let imaginary = parseFloat(parts[2]);
-        if (parts[1] === '-')
-            imaginary = -imaginary;
-        return new complexNumber(real, imaginary);
-    }
-}
+new complexNumber(3, 4).add(new complexNumber(1, 2)); // 4 + 6i
 ```
+<a name="subtract"></a>
 
-## Parameters
-* **real** - The real part of the complex number.
-* **imaginary** - The imaginary part of the complex number.
+## subtract(other) ⇒ <code>complexNumber</code>
+Subtracts two complex numbers.
 
+**Kind**: global function  
+**Returns**: <code>complexNumber</code> - The diffrence of the two complex numbers.  
 
+| Param | Type | Description |
+| --- | --- | --- |
+| other | <code>complexNumber</code> | The other complex number to be subtraced. |
 
-
-
-## Examples
+**Example**  
 ```js
-let z = new complexNumber(3, 4);
-let x = complexNumber.fromString('3 + 4i');
-let y = z.add(x);
-console.log(y.toPolar().toString());
-
+new complexNumber(3, 4).subtract(new complexNumber(1, 2)); // 2 + 2i
 ```
+<a name="multiply"></a>
+
+## multiply(other) ⇒ <code>complexNumber</code>
+Multiplies two complex numbers.
+
+**Kind**: global function  
+**Returns**: <code>complexNumber</code> - The product of the two complex numbers.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| other | <code>complexNumber</code> | The other complex number to be multiplied. |
+
+**Example**  
+```js
+new complexNumber(3, 4).multiply(new complexNumber(2, 0)); // 6 + 8i
+```
+<a name="divide"></a>
+
+## divide(other) ⇒ <code>complexNumber</code>
+Divides two complex numbers.
+
+**Kind**: global function  
+**Returns**: <code>complexNumber</code> - The quotient of the two complex numbers.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| other | <code>complexNumber</code> | The other complex number to be divided. |
+
+**Example**  
+```js
+new complexNumber(3, 4).divide(new complexNumber(2, 0)); // 1.5 + 2i
+```
+<a name="toString"></a>
+
+## toString() ⇒ <code>string</code>
+Returns a string representation of the complex number.
+
+**Kind**: global function  
+**Returns**: <code>string</code> - The string representation of the complex number.  
+**Example**  
+```js
+new complexNumber(3, 4).toString(); // 3 + 4i
+```
+<a name="toPolar"></a>
+
+## toPolar() ⇒ <code>complexNumber</code>
+Converts the complex number to polar form.
+
+**Kind**: global function  
+**Returns**: <code>complexNumber</code> - The polar form of the complex number.  
+**Example**  
+```js
+new complexNumber(3, 4).toPolar(); // 5 + 0.9272952180016122i
+```
+<a name="fromPolar"></a>
+
+## fromPolar(r, theta) ⇒ <code>complexNumber</code>
+Creates a complex number from polar coordinates.
+
+**Kind**: global function  
+**Returns**: <code>complexNumber</code> - The complex number.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| r | <code>number</code> | The magnitude of the complex number. |
+| theta | <code>number</code> | The angle of the complex number. |
+
+**Example**  
+```js
+complexNumber.fromPolar(5, Math.PI / 3); // 2.5 + 4.330127018922194i
+```
+<a name="fromString"></a>
+
+## fromString(str) ⇒ <code>complexNumber</code>
+Creates a complex number from a string.
+
+**Kind**: global function  
+**Returns**: <code>complexNumber</code> - The complex number.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| str | <code>string</code> | The string representation of the complex number. |
+
+**Example**  
+```js
+complexNumber.fromString('3 + 4i'); // 3 + 4i
+```
+Z
+
+Hash: dd2200168a08e4d90cc5ce905799b0e47b477defc1e88f959e1310752d02b421

@@ -8,5 +8,6 @@ A set of functions related to math.
 * [**LCM.js**](./LCM.md) - Find the LCM(Least Common Multiple) of two numbers
 * [**complexNumber.js**](./complexNumber.md) - Creates an instance of complexNumber.
 * [**factorial.js**](./factorial.md) - Finds the factorial of a number
+* [**fraction.js**](./fraction.md) - Creates an instance of fraction.
 * [**random.js**](./random.md) - Generates a cryptographically secure random integer in the range [min, max).
 * [**randomBytes.js**](./randomBytes.md) - Generates cryptographically secure random bytes. Uses the Web Crypto API if available, otherwise falls back to Node.js.

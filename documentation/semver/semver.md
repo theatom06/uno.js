@@ -6,7 +6,7 @@ Parses a version string and returns metadata about its components.
 ## Import 
 
 ```js
-import Semver from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/Semver';
+import semver from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/semver';
 ```
 
 ## Code
@@ -68,3 +68,5 @@ export default function semver(version) {
 semver('1.2.3-alpha+001'); // Output: { major: 1, minor: 2, patch: 3, preRelease: 'alpha', buildInfo: '001' }
 
 ```
+
+Hash: 10ebf3a3e694bca1498e960266e73440f8add431435e1f0db016131ac013e576

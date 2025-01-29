@@ -6,7 +6,7 @@ Pads the current string with another string until the resulting string reaches t
 ## Import 
 
 ```js
-import PadEnd from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/PadEnd';
+import padEnd from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/padEnd';
 ```
 
 ## Code
@@ -41,3 +41,5 @@ export default function padEnd(str, targetLength, padString) {
 padEnd('5', 2, '0'); // '50'
 
 ```
+
+Hash: f58ef1ceaa95348dbf3f8fa0e3fe72e557abe0d7d1e0fc94319e977c97894a3e

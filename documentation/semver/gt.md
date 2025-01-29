@@ -6,7 +6,7 @@ Compares two version strings and returns true if the first version is greater th
 ## Import 
 
 ```js
-import Gt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/Gt';
+import gt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/gt';
 ```
 
 ## Code
@@ -75,3 +75,5 @@ export default function gt(version1, version2){
 gt('1.2.3', '1.2.2'); // Output: true
 
 ```
+
+Hash: a167c03db30d946796a7d869f36c6a846a4590e3f8aa8d1df0ff368bb90b124d

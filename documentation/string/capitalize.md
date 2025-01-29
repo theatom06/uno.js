@@ -6,7 +6,7 @@ Capitalize the first letter of a string.
 ## Import 
 
 ```js
-import Capitalize from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/Capitalize';
+import capitalize from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/capitalize';
 ```
 
 ## Code
@@ -42,3 +42,5 @@ export default function capitalize(str, allWords = false) {
 capitalize('foo bar'); // 'Foo bar'
 
 ```
+
+Hash: 1dc0b48ccc00b26f372fe34d9e3897553f3fe9eae6a8bef6547e540791918c28

@@ -6,7 +6,7 @@ Checks if a version satisfies a range.
 ## Import 
 
 ```js
-import Satisfies from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/Satisfies';
+import satisfies from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/satisfies';
 ```
 
 ## Code
@@ -56,3 +56,5 @@ export default function satisfies(version, rangeVersion) {
 satisfies('1.2.3', '>=1.2.3'); // Output
 
 ```
+
+Hash: 6ea8f593bb35a294b909b4160ddd252f94f71316f67dc207a7aee11bb7975ee0

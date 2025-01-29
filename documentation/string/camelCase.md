@@ -6,7 +6,7 @@ Converts a string to camelcase.
 ## Import 
 
 ```js
-import CamelCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/CamelCase';
+import camelCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/camelCase';
 ```
 
 ## Code
@@ -37,3 +37,5 @@ export default function camelCase(str) {
 camelCase('foo-bar'); // 'fooBar'
 
 ```
+
+Hash: f35194f434c1f1fdd8aca62e79bc850cc3c6948c321d11961bd268246ec27adb

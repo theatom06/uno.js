@@ -6,7 +6,7 @@ Checks if a version string is a valid semver version.
 ## Import 
 
 ```js
-import Valid from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/Valid';
+import valid from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/valid';
 ```
 
 ## Code
@@ -40,3 +40,5 @@ export default function valid(version){
 valid('1.2.3-alpha+build'); // Output: true
 
 ```
+
+Hash: b2e11d8f0dd37cb8038ef1ea16a45a08086d948732672250297e0a79beca2e94
