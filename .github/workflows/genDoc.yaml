@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    
 
 jobs:
   generate-docs:
@@ -26,7 +28,7 @@ jobs:
       
       - name: Configure Git
         run: |
-          git config --global user.name  'theatom06'
+          git config --global user.name  
           git config --global user.email 'steve.alappat@gmail.com'
 
       - name: Commit and push changes
