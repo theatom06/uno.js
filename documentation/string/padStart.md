@@ -6,11 +6,11 @@ Pads the current string with another string until the resulting string reaches t
 ## Import 
 
 ```js
-import padStart from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/padStart.js';
+import padStart from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/padStart.js';
 ```
 and compresed version
 ```js
-import padStart from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/padStart.min.js';
+import padStart from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/padStart.min.js';
 ```
 
 ## Code

@@ -6,11 +6,11 @@ Converts a string to camelcase.
 ## Import 
 
 ```js
-import camelCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/camelCase.js';
+import camelCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/camelCase.js';
 ```
 and compresed version
 ```js
-import camelCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/camelCase.min.js';
+import camelCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/camelCase.min.js';
 ```
 
 ## Code

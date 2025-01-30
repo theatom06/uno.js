@@ -6,16 +6,16 @@ A constructor for dealing with omplex number.
 ## Import
 
 ```js
-import ComplexNumber from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/ComplexNumber.js';
+import complexNumber from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/complexNumber.js';
 ```
 and compresed version
 ```js
-import ComplexNumber from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/ComplexNumber.min.js';
+import complexNumber from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/complexNumber.min.js';
 ```
 
 ## Code
 This is a construct so the code is too long to be displayed here.
-If you want to see the code, you can check it [here](https://github.com/theatom06/uno.js/blob/main/lib/Math/ComplexNumber.js).
+If you want to see the code, you can check it [here](https://github.com/theatom06/uno.js/blob/main/lib/math/complexNumber.js).
 
 ## add(other) ⇒ <code>complexNumber</code>
 Adds two complex numbers.

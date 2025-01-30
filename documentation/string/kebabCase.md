@@ -6,11 +6,11 @@ Convert a string to kebab case.
 ## Import 
 
 ```js
-import kebabCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/kebabCase.js';
+import kebabCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/kebabCase.js';
 ```
 and compresed version
 ```js
-import kebabCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/kebabCase.min.js';
+import kebabCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/kebabCase.min.js';
 ```
 
 ## Code

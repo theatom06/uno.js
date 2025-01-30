@@ -6,11 +6,11 @@ Flattens an array recursively.
 ## Import 
 
 ```js
-import flatten from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/flatten.js';
+import flatten from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/flatten.js';
 ```
 and compresed version
 ```js
-import flatten from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/flatten.min.js';
+import flatten from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/flatten.min.js';
 ```
 
 ## Code

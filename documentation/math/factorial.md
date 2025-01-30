@@ -6,11 +6,11 @@ Finds the factorial of a number
 ## Import 
 
 ```js
-import factorial from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/factorial.js';
+import factorial from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/factorial.js';
 ```
 and compresed version
 ```js
-import factorial from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/factorial.min.js';
+import factorial from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/factorial.min.js';
 ```
 
 ## Code

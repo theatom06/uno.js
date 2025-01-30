@@ -6,11 +6,11 @@ Unescapes HTML entities in a given string.
 ## Import 
 
 ```js
-import unescapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/unescapeHTML.js';
+import unescapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/unescapeHTML.js';
 ```
 and compresed version
 ```js
-import unescapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/unescapeHTML.min.js';
+import unescapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/unescapeHTML.min.js';
 ```
 
 ## Code

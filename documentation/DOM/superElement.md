@@ -6,16 +6,16 @@ SuperElement is a class that wraps around the native DOM element and provides a 
 ## Import
 
 ```js
-import SuperElement from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/SuperElement.js';
+import superElement from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/superElement.js';
 ```
 and compresed version
 ```js
-import SuperElement from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/SuperElement.min.js';
+import superElement from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/superElement.min.js';
 ```
 
 ## Code
 This is a construct so the code is too long to be displayed here.
-If you want to see the code, you can check it [here](https://github.com/theatom06/uno.js/blob/main/lib/DOM/SuperElement.js).
+If you want to see the code, you can check it [here](https://github.com/theatom06/uno.js/blob/main/lib/DOM/superElement.js).
 
 ## textContent(text) ⇒ <code>SuperElement</code>
 Set or get the text content of the element.

@@ -6,11 +6,11 @@ Escapes special characters in a string to prevent XSS attacks via HTML.
 ## Import 
 
 ```js
-import escapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/escapeHTML.js';
+import escapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/escapeHTML.js';
 ```
 and compresed version
 ```js
-import escapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/escapeHTML.min.js';
+import escapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/escapeHTML.min.js';
 ```
 
 ## Code

@@ -6,11 +6,11 @@ Splits an array into chunks of a specified size.
 ## Import 
 
 ```js
-import toChunk from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/toChunk.js';
+import toChunk from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/toChunk.js';
 ```
 and compresed version
 ```js
-import toChunk from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/toChunk.min.js';
+import toChunk from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/toChunk.min.js';
 ```
 
 ## Code

@@ -6,11 +6,11 @@ Compares two version strings and returns true if the first version is less than 
 ## Import 
 
 ```js
-import lt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/lt.js';
+import lt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/semver/lt.js';
 ```
 and compresed version
 ```js
-import lt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/lt.min.js';
+import lt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/semver/lt.min.js';
 ```
 
 ## Code

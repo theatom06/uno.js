@@ -6,11 +6,11 @@ Reverse a string.
 ## Import 
 
 ```js
-import reverseString from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/reverseString.js';
+import reverseString from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/reverseString.js';
 ```
 and compresed version
 ```js
-import reverseString from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/reverseString.min.js';
+import reverseString from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/reverseString.min.js';
 ```
 
 ## Code

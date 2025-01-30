@@ -6,11 +6,11 @@ Generates cryptographically secure random bytes. Uses the Web Crypto API if avai
 ## Import 
 
 ```js
-import randomBytes from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/randomBytes.js';
+import randomBytes from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/randomBytes.js';
 ```
 and compresed version
 ```js
-import randomBytes from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/randomBytes.min.js';
+import randomBytes from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/randomBytes.min.js';
 ```
 
 ## Code

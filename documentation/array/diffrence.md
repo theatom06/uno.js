@@ -6,11 +6,11 @@ Returns the difference between two or more arrays.
 ## Import 
 
 ```js
-import diffrence from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/diffrence.js';
+import diffrence from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/diffrence.js';
 ```
 and compresed version
 ```js
-import diffrence from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/diffrence.min.js';
+import diffrence from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/diffrence.min.js';
 ```
 
 ## Code

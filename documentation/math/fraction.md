@@ -6,16 +6,16 @@ A constructor for dealing with fractions.
 ## Import
 
 ```js
-import Fraction from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/Fraction.js';
+import fraction from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/fraction.js';
 ```
 and compresed version
 ```js
-import Fraction from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/Fraction.min.js';
+import fraction from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/fraction.min.js';
 ```
 
 ## Code
 This is a construct so the code is too long to be displayed here.
-If you want to see the code, you can check it [here](https://github.com/theatom06/uno.js/blob/main/lib/Math/Fraction.js).
+If you want to see the code, you can check it [here](https://github.com/theatom06/uno.js/blob/main/lib/math/fraction.js).
 
 ## simplify() ⇒ <code>fraction</code>
 Simplifies the fraction.

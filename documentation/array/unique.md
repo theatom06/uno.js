@@ -6,11 +6,11 @@ Removes all duplicates from a array
 ## Import 
 
 ```js
-import unique from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/unique.js';
+import unique from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/unique.js';
 ```
 and compresed version
 ```js
-import unique from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/unique.min.js';
+import unique from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/unique.min.js';
 ```
 
 ## Code

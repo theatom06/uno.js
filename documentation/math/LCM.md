@@ -6,11 +6,11 @@ Find the LCM(Least Common Multiple) of two numbers
 ## Import 
 
 ```js
-import LCM from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/LCM.js';
+import LCM from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/LCM.js';
 ```
 and compresed version
 ```js
-import LCM from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/LCM.min.js';
+import LCM from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/LCM.min.js';
 ```
 
 ## Code

@@ -6,11 +6,11 @@ Compares two version strings and returns true if the first version is greater th
 ## Import 
 
 ```js
-import gt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/gt.js';
+import gt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/semver/gt.js';
 ```
 and compresed version
 ```js
-import gt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/gt.min.js';
+import gt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/semver/gt.min.js';
 ```
 
 ## Code

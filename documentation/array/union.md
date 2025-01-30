@@ -6,11 +6,11 @@ Creates a union of arrays
 ## Import 
 
 ```js
-import union from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/union.js';
+import union from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/union.js';
 ```
 and compresed version
 ```js
-import union from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/union.min.js';
+import union from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/union.min.js';
 ```
 
 ## Code
