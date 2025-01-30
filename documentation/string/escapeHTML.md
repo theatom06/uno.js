@@ -6,10 +6,15 @@ Escapes special characters in a string to prevent XSS attacks via HTML.
 ## Import 
 
 ```js
-import escapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/escapeHTML';
+import escapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/escapeHTML.js';
+```
+and compresed version
+```js
+import escapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/escapeHTML.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Escapes special characters in a string to prevent XSS attacks via HTML.
@@ -44,5 +49,3 @@ export default function escapeHTML(str) {
 escapeHTML('<script>alert("xss");</script>'); // '&lt;script&gt;alert("xss");&lt;/script&gt;'
 
 ```
-
-Hash: 75fcd6413b7457a34028f7f1e5342088386c9da7b58be74e65b8f561ec2a62e8

@@ -6,10 +6,15 @@ Convert a string to snake case.
 ## Import 
 
 ```js
-import snakeCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/snakeCase';
+import snakeCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/snakeCase.js';
+```
+and compresed version
+```js
+import snakeCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/snakeCase.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Convert a string to snake case.
@@ -37,5 +42,3 @@ export default function snakeCase(str) {
 snakeCase('fooBar'); // 'foo_bar'
 
 ```
-
-Hash: 125c65d2cce6ea7704bd95667589a47b9bb90cb3f93b3a1a1062598c1be21ff8

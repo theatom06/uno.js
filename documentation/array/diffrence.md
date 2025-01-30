@@ -6,10 +6,15 @@ Returns the difference between two or more arrays.
 ## Import 
 
 ```js
-import diffrence from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/diffrence';
+import diffrence from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/diffrence.js';
+```
+and compresed version
+```js
+import diffrence from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/diffrence.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Returns the difference between two or more arrays.
@@ -37,5 +42,3 @@ export default function difference(...arrays){
 difference([1, 2, 3], [2, 3, 4]) // [1]
 
 ```
-
-Hash: b16a5754e4c13e3dac744aabb91706f64819a3c67401a2e5abc240919d70e86e

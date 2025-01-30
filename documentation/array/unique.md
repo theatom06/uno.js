@@ -6,10 +6,15 @@ Removes all duplicates from a array
 ## Import 
 
 ```js
-import unique from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/unique';
+import unique from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/unique.js';
+```
+and compresed version
+```js
+import unique from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/unique.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Removes all duplicates from a array
@@ -37,5 +42,3 @@ export default function unique(array) {
 unique([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 
 ```
-
-Hash: 5cc3810e7052f15b3b7cc84bb504ef9eb01a3bb78a52eb0a364b803749e8f985

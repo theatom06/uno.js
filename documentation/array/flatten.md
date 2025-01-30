@@ -6,10 +6,15 @@ Flattens an array recursively.
 ## Import 
 
 ```js
-import flatten from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/flatten';
+import flatten from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/flatten.js';
+```
+and compresed version
+```js
+import flatten from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/flatten.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Flattens an array recursively.
@@ -37,5 +42,3 @@ export default function flatten(array) {
 flatten([1, [2, [3, [4]], 5]]) // [1, 2, 3, 4, 5]
 
 ```
-
-Hash: ca5719d16152c5a5429228743eed1ecfdb56db9b8db94a3c53ed8aabda73dcc1

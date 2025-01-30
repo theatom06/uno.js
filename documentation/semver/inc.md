@@ -6,12 +6,48 @@ Increments a version string based on the release type.
 ## Import 
 
 ```js
-import inc from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/inc';
+import inc from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/inc.js';
+```
+and compresed version
+```js
+import inc from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/inc.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
-import semver from "./semver";
+function semver(version) {
+    let metadata = {
+        version,
+        major: null,
+        minor: null,
+        patch: null,
+        preRelease: null,
+        buildInfo: null,
+        range: '='
+    };
+
+    if (version.includes('+')) [version, metadata.buildInfo] = version.split('+');
+
+    if (version.includes('-')) [version, metadata.preRelease] = version.split('-');
+
+    const parseVersion = (ver) => ver.split('.').map(num => isNaN(Number(num)) ? null : Number(num));
+
+    if (version.startsWith('^')) {
+        metadata.range = '^';
+        version = version.slice(1);
+    } else if (version.startsWith('>=')) {
+        metadata.range = '>=';
+        version = version.slice(2);
+    } else if (version.startsWith('<=')) {
+        metadata.range = '<=';
+        version = version.slice(2);
+    }
+
+    [metadata.major, metadata.minor, metadata.patch] = parseVersion(version);
+
+    return metadata;
+}
 
 /**
  * Increments a version string based on the release type.
@@ -58,5 +94,3 @@ export default function inc(version, release){
 inc('1.2.3', 'major'); // Output: '2.0.0'
 
 ```
-
-Hash: 0a7e2927aa5f273a8214797fdced6d1f0caf9d483253c0776a32b5f6f7de582c

@@ -6,10 +6,15 @@ Convert a string to kebab case.
 ## Import 
 
 ```js
-import kebabCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/kebabCase';
+import kebabCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/kebabCase.js';
+```
+and compresed version
+```js
+import kebabCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/kebabCase.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Convert a string to kebab case.
@@ -37,5 +42,3 @@ export default function kebabCase(str) {
 kebabCase('fooBar'); // 'foo-bar'
 
 ```
-
-Hash: 841ff17d9fef8003f6deb1e79dde2ca21de2b9f1ccfa5528bdfb7d5cfee2f57a

@@ -6,10 +6,15 @@ Unescapes HTML entities in a given string.
 ## Import 
 
 ```js
-import unescapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/unescapeHTML';
+import unescapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/unescapeHTML.js';
+```
+and compresed version
+```js
+import unescapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/unescapeHTML.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Unescapes HTML entities in a given string.
@@ -44,5 +49,3 @@ export default function unescapeHTML(str) {
 unescapeHTML('foo &amp; bar'); // 'foo & bar'
 
 ```
-
-Hash: 626aaab7e77fb875ae69c2fdbfb3202b31b7ca7652546e5f20bc9cfc8a77fb2b

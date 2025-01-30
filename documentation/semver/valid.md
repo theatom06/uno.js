@@ -6,12 +6,48 @@ Checks if a version string is a valid semver version.
 ## Import 
 
 ```js
-import valid from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/valid';
+import valid from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/valid.js';
+```
+and compresed version
+```js
+import valid from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/valid.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
-import semver from './semver.js';
+function semver(version) {
+    let metadata = {
+        version,
+        major: null,
+        minor: null,
+        patch: null,
+        preRelease: null,
+        buildInfo: null,
+        range: '='
+    };
+
+    if (version.includes('+')) [version, metadata.buildInfo] = version.split('+');
+
+    if (version.includes('-')) [version, metadata.preRelease] = version.split('-');
+
+    const parseVersion = (ver) => ver.split('.').map(num => isNaN(Number(num)) ? null : Number(num));
+
+    if (version.startsWith('^')) {
+        metadata.range = '^';
+        version = version.slice(1);
+    } else if (version.startsWith('>=')) {
+        metadata.range = '>=';
+        version = version.slice(2);
+    } else if (version.startsWith('<=')) {
+        metadata.range = '<=';
+        version = version.slice(2);
+    }
+
+    [metadata.major, metadata.minor, metadata.patch] = parseVersion(version);
+
+    return metadata;
+}
 
 /**
  * Checks if a version string is a valid semver version.
@@ -40,5 +76,3 @@ export default function valid(version){
 valid('1.2.3-alpha+build'); // Output: true
 
 ```
-
-Hash: b2e11d8f0dd37cb8038ef1ea16a45a08086d948732672250297e0a79beca2e94

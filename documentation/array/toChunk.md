@@ -6,10 +6,15 @@ Splits an array into chunks of a specified size.
 ## Import 
 
 ```js
-import toChunk from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/toChunk';
+import toChunk from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/toChunk.js';
+```
+and compresed version
+```js
+import toChunk from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/toChunk.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Splits an array into chunks of a specified size.
@@ -43,5 +48,3 @@ export default function chunk(array, size) {
 chunk([1, 2, 3, 4, 5], 2) // [[1, 2], [3, 4], [5]]
 
 ```
-
-Hash: bcc0bf3a8d469dc2c3d0e9cd8a4b5ee33b417e75343d183e0036cc0fd0aa1259
