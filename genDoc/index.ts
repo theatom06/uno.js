@@ -82,7 +82,7 @@ async function handleFunctions(doc: Record<string, any>, filePath: string) {
         entrypoints: [filePath],
         minify: true,
         packages: "bundle",
-        outdir: docsDir,
+        outdir: libDir,
         naming: '[name].min.[ext]',
     })
 }
@@ -148,6 +148,14 @@ async function handleConstructs(doc: any, filePath: string) {
     } catch (error) {
         console.log(`Error for file ${filePath} : ${error}`);
     }
+
+    await Bun.build({
+        entrypoints: [filePath],
+        minify: true,
+        packages: "bundle",
+        outdir: libDir,
+        naming: '[name].min.[ext]',
+    })
 }
 
 async function processFile(relativeFilePath: string) {
