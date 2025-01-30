@@ -39,7 +39,7 @@ async function handleFunctions(doc: Record<string, any>, filePath: string) {
     let md = functionTemplate
         .replace('TITLE', (obj.title.charAt(0).toUpperCase() + obj.title.slice(1)))
         .replaceAll('TITLE', obj.title)
-        .replaceAll('TYPE', obj.filefolder.charAt(0).toUpperCase() + obj.filefolder.slice(1))
+        .replace('TYPE', obj.filefolder.charAt(0).toUpperCase() + obj.filefolder.slice(1))
         .replaceAll('TYPE', obj.filefolder)
         .replaceAll('DESCRIPTION', obj.description)
         .replaceAll('AUTHOR', obj.author)
@@ -91,8 +91,11 @@ async function handleConstructs(doc: any, filePath: string) {
     const relativeFilePath = path.relative(libDir, filePath);
 
     let md = constructTemplate
-        .replaceAll('TITLE', path.basename(relativeFilePath).replace('.js', '').charAt(0).toUpperCase() + path.basename(relativeFilePath).replace('.js', '').slice(1))
-        .replaceAll('TYPE', path.dirname(relativeFilePath).charAt(0).toUpperCase() + path.dirname(relativeFilePath).slice(1))
+
+        .replace('TITLE', path.basename(relativeFilePath).replace('.js', '').charAt(0).toUpperCase() + path.basename(relativeFilePath).replace('.js', '').slice(1))
+        .replaceAll('TITLE', path.basename(relativeFilePath).replace('.js', ''))
+        .replace('TYPE', path.dirname(relativeFilePath).charAt(0).toUpperCase() + path.dirname(relativeFilePath).slice(1))
+        .replaceAll('TYPE', path.dirname(relativeFilePath))
         .replaceAll('AUTHOR', 'theatom06')
         .replaceAll('DESCRIPTION', doc.description)
 
