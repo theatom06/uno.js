@@ -6,7 +6,11 @@ A constructor for dealing with omplex number.
 ## Import
 
 ```js
-import ComplexNumber from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/ComplexNumber';
+import ComplexNumber from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/ComplexNumber.js';
+```
+and compresed version
+```js
+import ComplexNumber from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/ComplexNumber.min.js';
 ```
 
 ## Code
@@ -131,5 +135,3 @@ Creates a complex number from a string.
 complexNumber.fromString('3 + 4i'); // 3 + 4i
 ```
 Z
-
-Hash: dd2200168a08e4d90cc5ce905799b0e47b477defc1e88f959e1310752d02b421

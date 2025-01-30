@@ -6,10 +6,15 @@ Pads the current string with another string until the resulting string reaches t
 ## Import 
 
 ```js
-import padStart from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/padStart';
+import padStart from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/padStart.js';
+```
+and compresed version
+```js
+import padStart from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/padStart.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Pads the current string with another string until the resulting string reaches the given length.
@@ -41,5 +46,3 @@ export default function padStart(str, targetLength, padString) {
 padStart('5', 2, '0'); // '05'
 
 ```
-
-Hash: f4b4f831b77265fd6d6c3df91dcdc1cf9ca6f22c16d76baf7fa8696c42142dda

@@ -6,10 +6,15 @@ Shuffles an array randomly
 ## Import 
 
 ```js
-import shuffle from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/shuffle';
+import shuffle from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/shuffle.js';
+```
+and compresed version
+```js
+import shuffle from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Array/shuffle.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Shuffles an array randomly
@@ -41,5 +46,3 @@ export default function shuffle(array) {
 shuffle([1, 2, 3, 4, 5]) // [3, 2, 5, 1, 4]
 
 ```
-
-Hash: 226eb996479aa096431ea7c7d693d06a5b823861f5437359d470389df2eb2cbf

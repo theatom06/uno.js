@@ -6,12 +6,48 @@ Compares two version strings and returns true if the first version is greater th
 ## Import 
 
 ```js
-import gt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/gt';
+import gt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/gt.js';
+```
+and compresed version
+```js
+import gt from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/gt.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
-import semver from "./semver";
+function semver(version) {
+    let metadata = {
+        version,
+        major: null,
+        minor: null,
+        patch: null,
+        preRelease: null,
+        buildInfo: null,
+        range: '='
+    };
+
+    if (version.includes('+')) [version, metadata.buildInfo] = version.split('+');
+
+    if (version.includes('-')) [version, metadata.preRelease] = version.split('-');
+
+    const parseVersion = (ver) => ver.split('.').map(num => isNaN(Number(num)) ? null : Number(num));
+
+    if (version.startsWith('^')) {
+        metadata.range = '^';
+        version = version.slice(1);
+    } else if (version.startsWith('>=')) {
+        metadata.range = '>=';
+        version = version.slice(2);
+    } else if (version.startsWith('<=')) {
+        metadata.range = '<=';
+        version = version.slice(2);
+    }
+
+    [metadata.major, metadata.minor, metadata.patch] = parseVersion(version);
+
+    return metadata;
+}
 
 /**
  * Compares two version strings and returns true if the first version is greater than the second.
@@ -75,5 +111,3 @@ export default function gt(version1, version2){
 gt('1.2.3', '1.2.2'); // Output: true
 
 ```
-
-Hash: a167c03db30d946796a7d869f36c6a846a4590e3f8aa8d1df0ff368bb90b124d

@@ -6,10 +6,15 @@ Find the GCD(Greatest Common Divisor) of two numbers
 ## Import 
 
 ```js
-import GCD from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/GCD';
+import GCD from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/GCD.js';
+```
+and compresed version
+```js
+import GCD from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/GCD.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Find the GCD(Greatest Common Divisor) of two numbers
@@ -42,5 +47,3 @@ export default function GCD(a, b) {
 GCD(12, 8); // 4
 
 ```
-
-Hash: 1b21ea79fe892dd058765630c198e1dd099427a5c4ce9fe2dc374068780d3901

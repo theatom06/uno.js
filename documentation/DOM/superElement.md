@@ -6,7 +6,11 @@ SuperElement is a class that wraps around the native DOM element and provides a 
 ## Import
 
 ```js
-import SuperElement from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/SuperElement';
+import SuperElement from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/SuperElement.js';
+```
+and compresed version
+```js
+import SuperElement from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/SuperElement.min.js';
 ```
 
 ## Code
@@ -543,5 +547,3 @@ Returns the element.
 **Kind**: global function  
 **Returns**: <code>Element</code> - The element.  
 Z
-
-Hash: 20ca8fff07af85d3c8a781e30588814507f5804cb9d6cea868b4951cf7d5e157

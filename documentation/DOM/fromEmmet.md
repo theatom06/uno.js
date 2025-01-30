@@ -6,10 +6,15 @@ Create an element from an emmet string
 ## Import 
 
 ```js
-import fromEmmet from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/fromEmmet';
+import fromEmmet from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/fromEmmet.js';
+```
+and compresed version
+```js
+import fromEmmet from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/fromEmmet.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Create an element from an emmet string
@@ -55,5 +60,3 @@ export default function fromEmmet(emmet){
 fromEmmet('div#id.class1.class2[attr1=val1 attr2=val2]{text}'); // <div id="id" class="class1 class2" attr1="val1" attr2="val2">text</div>
 
 ```
-
-Hash: b7a76bff1f798f73331b6a509549caa599afc6be46f85365153c8b25765dbf43

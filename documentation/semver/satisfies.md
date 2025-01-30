@@ -6,12 +6,48 @@ Checks if a version satisfies a range.
 ## Import 
 
 ```js
-import satisfies from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/satisfies';
+import satisfies from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/satisfies.js';
+```
+and compresed version
+```js
+import satisfies from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Semver/satisfies.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
-import semver from "./semver";
+function semver(version) {
+    let metadata = {
+        version,
+        major: null,
+        minor: null,
+        patch: null,
+        preRelease: null,
+        buildInfo: null,
+        range: '='
+    };
+
+    if (version.includes('+')) [version, metadata.buildInfo] = version.split('+');
+
+    if (version.includes('-')) [version, metadata.preRelease] = version.split('-');
+
+    const parseVersion = (ver) => ver.split('.').map(num => isNaN(Number(num)) ? null : Number(num));
+
+    if (version.startsWith('^')) {
+        metadata.range = '^';
+        version = version.slice(1);
+    } else if (version.startsWith('>=')) {
+        metadata.range = '>=';
+        version = version.slice(2);
+    } else if (version.startsWith('<=')) {
+        metadata.range = '<=';
+        version = version.slice(2);
+    }
+
+    [metadata.major, metadata.minor, metadata.patch] = parseVersion(version);
+
+    return metadata;
+}
 
 /**
  * Checks if a version satisfies a range.
@@ -56,5 +92,3 @@ export default function satisfies(version, rangeVersion) {
 satisfies('1.2.3', '>=1.2.3'); // Output
 
 ```
-
-Hash: 6ea8f593bb35a294b909b4160ddd252f94f71316f67dc207a7aee11bb7975ee0

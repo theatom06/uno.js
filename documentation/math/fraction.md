@@ -6,7 +6,11 @@ A constructor for dealing with fractions.
 ## Import
 
 ```js
-import Fraction from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/Fraction';
+import Fraction from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/Fraction.js';
+```
+and compresed version
+```js
+import Fraction from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/Fraction.min.js';
 ```
 
 ## Code
@@ -114,5 +118,3 @@ Creates a fraction from a string.
 fraction.fromString('3/4'); // 3/4
 ```
 Z
-
-Hash: cb796c309d0954a99f34a6344886cbd03ea9d69ecde584d29bb57d2a4d16e968

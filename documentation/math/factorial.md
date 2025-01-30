@@ -6,10 +6,15 @@ Finds the factorial of a number
 ## Import 
 
 ```js
-import factorial from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/factorial';
+import factorial from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/factorial.js';
+```
+and compresed version
+```js
+import factorial from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Math/factorial.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Finds the factorial of a number
@@ -40,5 +45,3 @@ export default function factorial(n) {
 factorial(5); // 120
 
 ```
-
-Hash: bc1baea395d6a569d528bf805c431b94a5eb12224c30f7e593004c8ccafed2ef

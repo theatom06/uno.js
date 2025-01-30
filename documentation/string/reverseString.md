@@ -6,10 +6,15 @@ Reverse a string.
 ## Import 
 
 ```js
-import reverseString from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/reverseString';
+import reverseString from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/reverseString.js';
+```
+and compresed version
+```js
+import reverseString from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/String/reverseString.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Reverse a string.
@@ -37,5 +42,3 @@ export default function reverseString(str) {
 reverseString('hello'); // 'olleh'
 
 ```
-
-Hash: dbae32d3dbe406f5c6a179dad72e6861a6dc29e0257169d9b18f936223c47b26

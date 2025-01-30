@@ -6,10 +6,15 @@ Format dates into a given format
 ## Import 
 
 ```js
-import format from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Date/format';
+import format from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Date/format.js';
+```
+and compresed version
+```js
+import format from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/Date/format.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 /**
  * Format dates into a given format
@@ -47,5 +52,3 @@ export default function formatDate(date, format) {
 formatDate(new Date(), 'MM/DD/YYYY HH:mm:ss'); // '01/01/1970 00:00:00'
 
 ```
-
-Hash: 9578c08f6be01a7c1948b797d99251b6394625f35729b8277d0a77daabd79119
