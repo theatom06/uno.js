@@ -6,8 +6,8 @@ A set of functions related to semver.
 
 * [**sort.js**](./sort.md) - 
 * [**valid.js**](./valid.md) - 
-* [**satisfies.js**](./satisfies.md) - 
 * [**semver.js**](./semver.md) - 
-* [**gt.js**](./gt.md) - 
-* [**lt.js**](./lt.md) - 
 * [**inc.js**](./inc.md) - 
+* [**lt.js**](./lt.md) - 
+* [**satisfies.js**](./satisfies.md) - 
+* [**gt.js**](./gt.md) - 

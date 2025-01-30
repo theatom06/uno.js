@@ -4,13 +4,13 @@ A set of functions related to string.
 
 ## Functions
 
-* [**snakeCase.js**](./snakeCase.md) - 
-* [**capitalize.js**](./capitalize.md) - 
-* [**camelCase.js**](./camelCase.md) - 
-* [**reverseString.js**](./reverseString.md) - 
-* [**escapeHTML.js**](./escapeHTML.md) - 
-* [**truncate.js**](./truncate.md) - 
-* [**kebabCase.js**](./kebabCase.md) - 
 * [**padEnd.js**](./padEnd.md) - 
+* [**truncate.js**](./truncate.md) - 
 * [**padStart.js**](./padStart.md) - 
+* [**escapeHTML.js**](./escapeHTML.md) - 
+* [**kebabCase.js**](./kebabCase.md) - 
+* [**reverseString.js**](./reverseString.md) - 
+* [**camelCase.js**](./camelCase.md) - 
+* [**capitalize.js**](./capitalize.md) - 
 * [**unescapeHTML.js**](./unescapeHTML.md) - 
+* [**snakeCase.js**](./snakeCase.md) - 
