@@ -1,0 +1,25 @@
+name: Generate Docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest  # Use a specific version if needed
+
+      - name: Install jsdoc-to-markdown globally
+        run: bun add -g jsdoc-to-markdown
+
+      - name: Run documentation generation script
+        run: bun ./genDoc/index.ts

@@ -4,7 +4,7 @@
   "description": "The documentation generator for uno.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "jsdoc": "jsdoc"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,13 @@
   "dependencies": {
     "jsdoc-to-markdown": "^9.1.1"
   },
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
   "devDependencies": {
-    "@types/jsdoc-to-markdown": "^7.0.6"
+    "@types/jsdoc-to-markdown": "^7.0.6",
+    "@types/bun": "latest"
+
   }
 }

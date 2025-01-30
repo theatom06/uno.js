@@ -6,10 +6,15 @@ DESCRIPTION
 ## Import 
 
 ```js
-import TITLE from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/TYPE/TITLE';
+import TITLE from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/TYPE/TITLE.js';
+```
+and compresed version
+```js
+import TITLE from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/TYPE/TITLE.min.js';
 ```
 
 ## Code
+The raw code of the function is available here:
 ```js
 CODE
 ```
@@ -24,5 +29,3 @@ RETURNS
 ```js
 EXAMPLES
 ```
-
-Hash: HASH
