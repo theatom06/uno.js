@@ -3,6 +3,7 @@ import { readdir, stat } from "node:fs/promises";
 
 const libDir = path.join(import.meta.dir, '../lib');
 const docsDir = path.join(import.meta.dir, '../documentation');
+const workspaceDir = path.join(import.meta.dir, './');
 let folderStructure: Record<string, any> = {};
 
 console.log('Uno.js Documentation Generator');
@@ -14,8 +15,8 @@ console.log('Generating documentation...');
 console.log('Library directory:', libDir);
 console.log('Documentation directory:', docsDir);
 
-const functionTemplate = await Bun.file('./functionTemplate.md').text();
-const constructTemplate = await Bun.file('./constructTemplate.md').text();
+const functionTemplate = await Bun.file(path.join(workspaceDir, 'functionTemplate.md')).text();
+const constructTemplate = await Bun.file(path.join(workspaceDir, 'constructTemplate.md')).text();
 
 async function handleFunctions(doc: Record<string, any>, filePath: string) {
     const code = await Bun.file(filePath).text();
