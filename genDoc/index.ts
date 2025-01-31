@@ -156,7 +156,7 @@ async function handleConstructs(doc: any, filePath: string) {
         entrypoints: [filePath],
         minify: true,
         packages: "bundle",
-        outdir: libDir,
+        outdir: path.join(libDir, path.dirname(relativeFilePath)),
         naming: '[name].min.[ext]',
     })
 }
@@ -230,13 +230,14 @@ process.on('exit', async () => {
         const readmeContent = `# ${folder.charAt(0).toUpperCase() + folder.slice(1)}\n\n` +
             `A set of functions related to ${folder}.\n\n` +
             `## Functions\n\n` +
-            folderStructure[folder].map((file: any) => `* [**${file.file}**](./${file.file.replace('.js', '.md')}) - ${file.description}`).join('\n') + '\n';
+            folderStructure[folder].map((file: any) => `* [**${file.file}**](./${file.file.replace('.js', '.md')})`).join('\n') + '\n';
         const readmePath = path.join(docsDir, folder, 'README.md');
         await Bun.file(readmePath).write(readmeContent);
         console.log('   Generated README file:', path.relative(docsDir, readmePath));
     }));
 
-    Bun.$`bun run ./genWebsite.ts`
+    Bun.$`bun run ./genWebsite.ts`;
+    Bun.$`cp ${libDir} ${path.join(docsDir, 'lib')}`;
 
     console.log('\nDocumentation generated successfully!');
 });

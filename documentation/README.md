@@ -9,22 +9,25 @@ You don't need to install anything. Just import the function you need via a CDN.
 For example, to import the `fromEmmet` function, you can use the following code:
 
 ```js
-import fromEmmet from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/fromEmmet.js';
+import fromEmmet from 'https://uno.js.org/lib/DOM/fromEmmet.js';
 ```
 
 The Syntax for importing any FUNCTION of any TYPE is as follows:
 ```js
-import FUNCTION from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/TYPE/FUNCTION';
+import FUNCTION from 'https://uno.js.org/lib/TYPE/FUNCTION';
 ```
 
-**Don't want to use a CDN?** You can head over to our Documentation of that function and copy the code from there. 
+And the documentation is [here](https://uno.js.org/docs/TYPE/FUNCTION).
+
+
+**Don't want to use a CDN?** You can head over to the Documentation of that function and copy the code from there. 
 
 ## Why Uno.js?
 - Uno.js is a JavaScript library that offers the convenience of exporting one function per file without the need for downloading the entire library.
 
 - By exporting individual functions, Uno.js allows you to import only the specific functions you require, resulting in a smaller bundle size and improved code readability.
 
-- The documentation for Uno.js is automatically generated from the source code, ensuring that it is always up to date. You can find the documentation in the `documentations` directory on the [GitHub Repository](https://github.com/theatom06/uno.js).
+- The documentation for Uno.js is automatically generated from the source code, ensuring that it is always up to date. You can find the documentation in the `documentations` directory on the [GitHub Repository](https://github.com/theatom06/uno.js) or on the [Uno.js website](https://uno.js.org/docs) of that function. (refer to the Installation section for more details)
 
 - It supports jsdoc comments, which makes it easier to understand the function's purpose and usage.
 
@@ -32,15 +35,15 @@ import FUNCTION from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/TYPE
 
 ## Documentation
 
-The documentation for Uno.js is automatically generated from the source code, ensuring that it is always up to date. You can find the documentation in the `documentations` directory on the [GitHub Repository](https://github.com/theatom06/uno.js).
+The documentation for Uno.js is automatically generated from the source code, ensuring that it is always up to date. You can find the documentation in the `documentations` directory on the [GitHub Repository](https://github.com/theatom06/uno.js) or on the [Uno.js website](https://uno.js.org/docs) of that function.
 
 Each function has its own documentation, which includes the function's purpose, usage, and examples.
 
 The functions are divided into the following categories for easy navigation:
 
-- [Array](./array/README.md)
-- [Date](./date/README.md)
-- [DOM](./DOM/README.md)
-- [Math](./math/README.md)
-- [String](./string/README.md)
-- [Semver](./semver/README.md)
+- [Array](./array/)
+- [Date](./date/)
+- [DOM](./DOM/)
+- [Math](./math/)
+- [String](./string/)
+- [Semver](./semver/)

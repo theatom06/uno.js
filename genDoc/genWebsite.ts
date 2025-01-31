@@ -16,15 +16,13 @@ md.use(anchor);
 md.use(toc);
 md.use(sections);
 
-const web = path.join(
-    import.meta.dir, '../docs');
-const docsDir = path.join(
-    import.meta.dir, '../documentation');
+const web = path.join( import.meta.dir, '../docs/docs/');
+const docsDir = path.join( import.meta.dir, '../documentation');
 const template = await Bun.file(path.join(
     import.meta.dir, 'template.html')).text();
 
 function makeFile(_md: string) {
-    const section = md.render(_md);
+    const section = md.render(_md.replace('.md', '.html'));
     return template.replace('WEBSITE', section);
 }
 

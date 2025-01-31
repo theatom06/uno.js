@@ -9,11 +9,11 @@ DESCRIPTION
 ## Import
 
 ```js
-import TITLE from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/TYPE/TITLE.js';
+import TITLE from 'https://uno.js.org/lib/TYPE/TITLE.js';
 ```
 and compresed version
 ```js
-import TITLE from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/TYPE/TITLE.min.js';
+import TITLE from 'https://uno.js.org/lib/TYPE/TITLE.min.js';
 ```
 
 ## Code
