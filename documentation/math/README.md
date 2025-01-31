@@ -4,10 +4,12 @@ A set of functions related to math.
 
 ## Functions
 
-* [**GCD.js**](./GCD.md)
-* [**factorial.js**](./factorial.md)
-* [**LCM.js**](./LCM.md)
-* [**random.js**](./random.md)
-* [**randomBytes.js**](./randomBytes.md)
-* [**complexNumber.js**](./complexNumber.md)
-* [**fraction.js**](./fraction.md)
+* [**fraction.min.js**](./fraction.min.md) - 
+* [**complexNumber.min.js**](./complexNumber.min.md) - 
+* [**randomBytes.js**](./randomBytes.md) - 
+* [**LCM.js**](./LCM.md) - 
+* [**factorial.js**](./factorial.md) - 
+* [**random.js**](./random.md) - 
+* [**GCD.js**](./GCD.md) - 
+* [**complexNumber.js**](./complexNumber.md) - 
+* [**fraction.js**](./fraction.md) - 
