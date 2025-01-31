@@ -236,5 +236,7 @@ process.on('exit', async () => {
         console.log('   Generated README file:', path.relative(docsDir, readmePath));
     }));
 
+    Bun.$`bun run ./genWebsite.ts`
+
     console.log('\nDocumentation generated successfully!');
 });

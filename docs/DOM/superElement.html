@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/atom-one-dark.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Uno.js Docs" />
+  <meta name="theme-color" content="#000000" />
+  <title>Uno.js</title>
+  <script type="module" crossorigin src="/assets/index-BYssil4q.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Du9_KIOI.css">
+</head>
+
+<body class="font-OpenSans h-screen bg-background text-white overflow-hidden">
+  <header class="w-full p-2 flex items-center justify-between border-b-[1px] border-gray-700 absolute top-0 bg-background">
+    <div class="flex items-center">
+      <img src="/logo.png" alt="logo" class="h-14 ">
+      <h1 class="text-3xl font-extrabold text-primary">Uno.js</h1>
+    </div>
+    <div class="flex items-center pr-2">
+      <a href="https://github.com/theatom06/uno.js">
+        <img src="/github.svg" alt="github" class="h-10 w-10 hover:h-11 hover:w-11" />
+      </a>
+    </div>
+  </header>
+  <main class="w-full flex grow h-screen pt-16">
+    <article class="grow">
+      <div class="m-auto bg-[#040316] max-w-6xl min-w-xl overflow-scroll overflow-x-hidden h-screen p-10 scroll">
+        <section id="superelement---dom" tabindex="-1">
+<h1 tabindex="-1">SuperElement - DOM</h1>
+<p>SuperElement is a class that wraps around the native DOM element and provides a more intuitive and easy to use API.</p>
+<p><strong>Author:</strong> theatom06</p>
+<section id="import" tabindex="-1">
+<h2 tabindex="-1">Import</h2>
+<pre><code class="language-js">import superElement from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/superElement.js';
+</code></pre>
+<p>and compresed version</p>
+<pre><code class="language-js">import superElement from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/superElement.min.js';
+</code></pre>
+</section>
+<section id="code" tabindex="-1">
+<h2 tabindex="-1">Code</h2>
+<p>This is a construct so the code is too long to be displayed here.
+If you want to see the code, you can check it <a href="https://github.com/theatom06/uno.js/blob/main/lib/DOM/superElement.js">here</a>.</p>
+</section>
+<section id="textcontent(text)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">textContent(text) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Set or get the text content of the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The text to set.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.textContent('Hello, World!'); //Sets the text content of the element.
+element.textContent(); //Returns the text content of the element.
+</code></pre>
+<p>&lt;a name=&quot;appendText&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="appendtext(text)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">appendText(text) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Append text to the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The text to append.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.appendText('Hello, '); //Appends text to the element.
+</code></pre>
+<p>&lt;a name=&quot;prependText&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="prependtext(text)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">prependText(text) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Prepends text to the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>Text to prepend</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.prependText('Hello, '); //Prepends text to the element.
+</code></pre>
+<p>&lt;a name=&quot;DangerouslySetInnerHTML&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="dangerouslysetinnerhtml(html)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">DangerouslySetInnerHTML(html) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>CAUTION: This method is dangerous and should be used with caution.
+Set the innerHTML of the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>html</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The HTML string to set.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.DangerouslySetInnerHTML('&lt;h1&gt;Hello, World!&lt;/h1&gt;'); //Sets the innerHTML of the element.
+</code></pre>
+<p>&lt;a name=&quot;appendTo&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="appendto(parent)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">appendTo(parent) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Appends the elemen to a parent element</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>parent</td>
+<td>&lt;code&gt;Element&lt;/code&gt;</td>
+<td>The parent element to append the element to.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.appendTo(document.body); //Appends the element to the body.
+</code></pre>
+<p>&lt;a name=&quot;prependTo&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="prependto(parent)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">prependTo(parent) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Prepends the element to a parent element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>parent</td>
+<td>&lt;code&gt;Element&lt;/code&gt;</td>
+<td>The parent element to prepend the element to.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.prependTo(document.body); //Prepends the element to the body.
+</code></pre>
+<p>&lt;a name=&quot;insertBefore&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="insertbefore(sibling)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">insertBefore(sibling) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Inserts the element before a sibling element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sibling</td>
+<td>&lt;code&gt;Element&lt;/code&gt;</td>
+<td>The sibling element to insert the element before.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.insertBefore(sibling); //Inserts the element before the sibling element.
+</code></pre>
+<p>&lt;a name=&quot;insertAfter&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="insertafter(sibling)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">insertAfter(sibling) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Inserts the element after a sibling element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sibling</td>
+<td>&lt;code&gt;Element&lt;/code&gt;</td>
+<td>The sibling element to insert the element after.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.insertAfter(sibling); //Inserts the element after the sibling element.
+</code></pre>
+<p>&lt;a name=&quot;remove&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="remove()" tabindex="-1">
+<h2 tabindex="-1">remove()</h2>
+<p>Removes the element from the DOM.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Example</strong></p>
+<pre><code class="language-js">element.remove(); //Removes the element from the DOM.
+</code></pre>
+<p>&lt;a name=&quot;on&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="on(event%2C-callback)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">on(event, callback) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Adds an event listener to the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>event</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The event to listen for.</td>
+</tr>
+<tr>
+<td>callback</td>
+<td>&lt;code&gt;function&lt;/code&gt;</td>
+<td>The callback function to call when the event is triggered.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.on('click', () =&gt; console.log('Clicked!')); //Adds a click event listener to the element.
+</code></pre>
+<p>&lt;a name=&quot;off&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="off(event%2C-callback)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">off(event, callback) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Removes an event listener from the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>event</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The event to remove the listener from.</td>
+</tr>
+<tr>
+<td>callback</td>
+<td>&lt;code&gt;function&lt;/code&gt;</td>
+<td>The callback function to remove.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.off('click', () =&gt; console.log('Clicked!')); //Removes the click event listener from the element.
+</code></pre>
+<p>&lt;a name=&quot;trigger&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="trigger(event)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">trigger(event) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Triggers an event on the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>event</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The event to trigger.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.trigger('click'); //Triggers a click event on the element.
+</code></pre>
+<p>&lt;a name=&quot;css&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="css(property%2C-value)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">css(property, value) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Set or get the css properties of the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>property</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The css property to set.</td>
+</tr>
+<tr>
+<td>value</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The value to set the css property to.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.css('color', 'red'); //Sets the color of the element to red.
+</code></pre>
+<p>&lt;a name=&quot;addClass&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="addclass(classname)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">addClass(className) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Adds a class to the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>className</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The class to add.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.addClass('red'); //Adds the class 'red' to the element.
+</code></pre>
+<p>&lt;a name=&quot;removeClass&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="removeclass(classname)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">removeClass(className) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Removes a class from the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>className</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The class to remove.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.removeClass('red'); //Removes the class 'red' from the element.
+</code></pre>
+<p>&lt;a name=&quot;toggleClass&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="toggleclass(classname)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">toggleClass(className) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Toggles a class on the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>className</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The class to toggle.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.toggleClass('red'); //Toggles the class 'red' on the element.
+</code></pre>
+<p>&lt;a name=&quot;hasClass&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="hasclass(classname)-%E2%87%92-%3Ccode%3Eboolean%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">hasClass(className) ⇒ &lt;code&gt;Boolean&lt;/code&gt;</h2>
+<p>Checks if the element has a class.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;Boolean&lt;/code&gt; - True if the element has the class, false otherwise.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>className</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The class to check</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.hasClass('red'); //Returns true if the element has the class 'red'.
+</code></pre>
+<p>&lt;a name=&quot;classes&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="classes()-%E2%87%92-%3Ccode%3Edomtokenlist%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">classes() ⇒ &lt;code&gt;DOMTokenList&lt;/code&gt;</h2>
+<p>Checks if the element has a class.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;DOMTokenList&lt;/code&gt; - The classes of the element.<br>
+<strong>Example</strong></p>
+<pre><code class="language-js">element.classes(); //Returns the classes of the element.
+</code></pre>
+<p>&lt;a name=&quot;attr&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="attr(attribute%2C-value)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">attr(attribute, value) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Set or get an attribute of the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>attribute</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The attribute to set.</td>
+</tr>
+<tr>
+<td>value</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The value to set the attribute to.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.attr('id', 'element'); //Sets the id of the element to 'element'.
+element.attr('id'); //Returns the id of the element.
+</code></pre>
+<p>&lt;a name=&quot;removeAttr&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="removeattr(attribute)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">removeAttr(attribute) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Removes an attribute from the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>attribute</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The attribute to remove.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.removeAttr('id'); //Removes the id attribute from the element.
+</code></pre>
+<p>&lt;a name=&quot;toggleAttr&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="toggleattr(attribute%2C-value)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">toggleAttr(attribute, value) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Toggles an attribute on the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>attribute</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The attribute to toggle.</td>
+</tr>
+<tr>
+<td>value</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The value to set the attribute to.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.toggleAttr('disabled', 'true'); //Toggles the disabled attribute on the element.
+</code></pre>
+<p>&lt;a name=&quot;attributes&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="attributes()-%E2%87%92-%3Ccode%3Enamednodemap%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">attributes() ⇒ &lt;code&gt;NamedNodeMap&lt;/code&gt;</h2>
+<p>Returns the attributes of the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;NamedNodeMap&lt;/code&gt; - The attributes of the element.<br>
+<strong>Example</strong></p>
+<pre><code class="language-js">element.attributes(); //Returns the attributes of the element.
+</code></pre>
+<p>&lt;a name=&quot;hasAttribute&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="hasattribute(attribute)-%E2%87%92-%3Ccode%3Eboolean%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">hasAttribute(attribute) ⇒ &lt;code&gt;Boolean&lt;/code&gt;</h2>
+<p>Checks if the element has an attribute.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;Boolean&lt;/code&gt; - True if the element has the attribute, false otherwise.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>attribute</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The attribute to check.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">element.hasAttribute('id'); //Returns true if the element has the id attribute.
+</code></pre>
+<p>&lt;a name=&quot;parent&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="parent()-%E2%87%92-%3Ccode%3Eelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">parent() ⇒ &lt;code&gt;Element&lt;/code&gt;</h2>
+<p>Returns the parent element of the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;Element&lt;/code&gt; - The parent element of the element.<br>
+&lt;a name=&quot;children&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="children()-%E2%87%92-%3Ccode%3Ehtmlcollection%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">children() ⇒ &lt;code&gt;HTMLCollection&lt;/code&gt;</h2>
+<p>Returns the children of the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;HTMLCollection&lt;/code&gt; - The children of the element.<br>
+&lt;a name=&quot;siblings&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="siblings()-%E2%87%92-%3Ccode%3Earray%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">siblings() ⇒ &lt;code&gt;Array&lt;/code&gt;</h2>
+<p>Returns the siblings of the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;Array&lt;/code&gt; - The siblings of the element.<br>
+&lt;a name=&quot;nextElement&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="nextelement()-%E2%87%92-%3Ccode%3Eelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">nextElement() ⇒ &lt;code&gt;Element&lt;/code&gt;</h2>
+<p>Returns the next sibling of the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;Element&lt;/code&gt; - The next sibling of the element.<br>
+&lt;a name=&quot;previousElement&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="previouselement()-%E2%87%92-%3Ccode%3Eelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">previousElement() ⇒ &lt;code&gt;Element&lt;/code&gt;</h2>
+<p>Returns the previous sibling of the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;Element&lt;/code&gt; - The previous sibling of the element.<br>
+&lt;a name=&quot;closest&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="closest(selector)-%E2%87%92-%3Ccode%3Eelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">closest(selector) ⇒ &lt;code&gt;Element&lt;/code&gt;</h2>
+<p>Returns the closest ancestor of the element that matches the selector.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;Element&lt;/code&gt; - The closest ancestor of the element that matches the selector.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>selector</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The selector to match.</td>
+</tr>
+</tbody>
+</table>
+<p>&lt;a name=&quot;find&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="find(selector)-%E2%87%92-%3Ccode%3Eelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">find(selector) ⇒ &lt;code&gt;Element&lt;/code&gt;</h2>
+<p>Returns the element matching the selector.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;Element&lt;/code&gt; - The element matching the selector.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>selector</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The selector to match.</td>
+</tr>
+</tbody>
+</table>
+<p>&lt;a name=&quot;findAll&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="findall(selector)-%E2%87%92-%3Ccode%3Enodelist%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">findAll(selector) ⇒ &lt;code&gt;NodeList&lt;/code&gt;</h2>
+<p>Returns the elements matching the selector.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;NodeList&lt;/code&gt; - The elements matching the selector.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>selector</td>
+<td>&lt;code&gt;String&lt;/code&gt;</td>
+<td>The selector to match.</td>
+</tr>
+</tbody>
+</table>
+<p>&lt;a name=&quot;style&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="style()-%E2%87%92-%3Ccode%3Ecssstyledeclaration%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">style() ⇒ &lt;code&gt;CSSStyleDeclaration&lt;/code&gt;</h2>
+<p>Returns the style of the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;CSSStyleDeclaration&lt;/code&gt; - The style of the element.<br>
+&lt;a name=&quot;clone&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="clone()-%E2%87%92-%3Ccode%3Eelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">clone() ⇒ &lt;code&gt;Element&lt;/code&gt;</h2>
+<p>Returns a clone of the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;Element&lt;/code&gt; - A clone of the element.<br>
+&lt;a name=&quot;replaceWith&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="replacewith(element)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">replaceWith(element) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Replace the element with another element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>element</td>
+<td>&lt;code&gt;Element&lt;/code&gt;</td>
+<td>The element to replace the element with.</td>
+</tr>
+</tbody>
+</table>
+<p>&lt;a name=&quot;wrap&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="wrap(element)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">wrap(element) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Wrap the element with another element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>element</td>
+<td>&lt;code&gt;Element&lt;/code&gt;</td>
+<td>The element to wrap the element with.</td>
+</tr>
+</tbody>
+</table>
+<p>&lt;a name=&quot;unwrap&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="unwrap()-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">unwrap() ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Unwrap the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.<br>
+<strong>Example</strong></p>
+<pre><code class="language-js">element.unwrap(); //Unwraps the element.
+</code></pre>
+<p>&lt;a name=&quot;scrollIntoView&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="scrollintoview(options)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">scrollIntoView(options) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Scrolls the element into view.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>options</td>
+<td>&lt;code&gt;Object&lt;/code&gt;</td>
+<td>The options for scrolling the element into view.</td>
+</tr>
+</tbody>
+</table>
+<p>&lt;a name=&quot;scrollTo&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="scrollto(options)-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">scrollTo(options) ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Scrolls the element to a specified position.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>options</td>
+<td>&lt;code&gt;Object&lt;/code&gt;</td>
+<td>The options for scrolling the element.</td>
+</tr>
+</tbody>
+</table>
+<p>&lt;a name=&quot;empty&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="empty()" tabindex="-1">
+<h2 tabindex="-1">empty()</h2>
+<p>Empties the element.</p>
+<p><strong>Kind</strong>: global function<br>
+&lt;a name=&quot;disable&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="disable()-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">disable() ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Disables the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.<br>
+&lt;a name=&quot;enable&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="enable()-%E2%87%92-%3Ccode%3Esuperelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">enable() ⇒ &lt;code&gt;SuperElement&lt;/code&gt;</h2>
+<p>Enables the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;SuperElement&lt;/code&gt; - The SuperElement object.<br>
+&lt;a name=&quot;render&quot;&gt;&lt;/a&gt;</p>
+</section>
+<section id="render()-%E2%87%92-%3Ccode%3Eelement%3C%2Fcode%3E" tabindex="-1">
+<h2 tabindex="-1">render() ⇒ &lt;code&gt;Element&lt;/code&gt;</h2>
+<p>Returns the element.</p>
+<p><strong>Kind</strong>: global function<br>
+<strong>Returns</strong>: &lt;code&gt;Element&lt;/code&gt; - The element.<br>
+Z</p>
+</section>
+</section>
+
+      </div>
+    </article>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+</body>
+
+</html>

@@ -1,7 +1,3 @@
-<p align="center">
-    <img src="./uno.png" alt="Uno.js Logo" />
-</p>
-
 # Uno.js
 
 A JS library that exports one function per file, which doesn't even need to be downloaded.

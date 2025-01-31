@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/atom-one-dark.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Uno.js Docs" />
+  <meta name="theme-color" content="#000000" />
+  <title>Uno.js</title>
+  <script type="module" crossorigin src="/assets/index-BYssil4q.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Du9_KIOI.css">
+</head>
+
+<body class="font-OpenSans h-screen bg-background text-white overflow-hidden">
+  <header class="w-full p-2 flex items-center justify-between border-b-[1px] border-gray-700 absolute top-0 bg-background">
+    <div class="flex items-center">
+      <img src="/logo.png" alt="logo" class="h-14 ">
+      <h1 class="text-3xl font-extrabold text-primary">Uno.js</h1>
+    </div>
+    <div class="flex items-center pr-2">
+      <a href="https://github.com/theatom06/uno.js">
+        <img src="/github.svg" alt="github" class="h-10 w-10 hover:h-11 hover:w-11" />
+      </a>
+    </div>
+  </header>
+  <main class="w-full flex grow h-screen pt-16">
+    <article class="grow">
+      <div class="m-auto bg-[#040316] max-w-6xl min-w-xl overflow-scroll overflow-x-hidden h-screen p-10 scroll">
+        <section id="fromemmet---dom" tabindex="-1">
+<h1 tabindex="-1">FromEmmet - DOM</h1>
+<p>Create an element from an emmet string</p>
+<p><strong>Author:</strong> theatom06</p>
+<section id="import" tabindex="-1">
+<h2 tabindex="-1">Import</h2>
+<pre><code class="language-js">import fromEmmet from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/fromEmmet.js';
+</code></pre>
+<p>and compresed version</p>
+<pre><code class="language-js">import fromEmmet from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/fromEmmet.min.js';
+</code></pre>
+</section>
+<section id="code" tabindex="-1">
+<h2 tabindex="-1">Code</h2>
+<p>The raw code of the function is available here:</p>
+<pre><code class="language-js">/**
+ * Create an element from an emmet string
+ * @param {string} emmet The emmet string.
+ * @returns {HTMLElement} The created element.
+ * @example
+ * fromEmmet('div#id.class1.class2[attr1=val1 attr2=val2]{text}'); // &lt;div id=&quot;id&quot; class=&quot;class1 class2&quot; attr1=&quot;val1&quot; attr2=&quot;val2&quot;&gt;text&lt;/div&gt;
+ * @author theatom06
+ */
+export default function fromEmmet(emmet){
+    let tagName = emmet.split(/[#.]/)[0];
+    let id = emmet.match(/#([^.]+)/);
+    let classes = emmet.match(/\.[^.#\[]+/g);
+    let attributes = emmet.match(/\[[^\]]+\]/g);
+    let text = emmet.match(/{[^}]+}/);
+    let element = document.createElement(tagName);
+    if(id)
+        element.id = id[1];
+    if(classes)
+        element.classList.add(...classes.map(c =&gt; c.slice(1)));
+    if(attributes)
+        attributes.forEach(a =&gt; {
+            let [name, value] = a.slice(1, -1).split('=');
+            element.setAttribute(name, value);
+        });
+    if(text)
+        element.textContent = text[0].slice(1, -1);
+
+    return element;
+}
+</code></pre>
+</section>
+<section id="parameters" tabindex="-1">
+<h2 tabindex="-1">Parameters</h2>
+<ul>
+<li><strong>emmet</strong> - The emmet string.</li>
+</ul>
+</section>
+<section id="returns" tabindex="-1">
+<h2 tabindex="-1">Returns</h2>
+<ul>
+<li><strong>HTMLElement</strong> - The created element.</li>
+</ul>
+</section>
+<section id="examples" tabindex="-1">
+<h2 tabindex="-1">Examples</h2>
+<pre><code class="language-js">fromEmmet('div#id.class1.class2[attr1=val1 attr2=val2]{text}'); // &lt;div id=&quot;id&quot; class=&quot;class1 class2&quot; attr1=&quot;val1&quot; attr2=&quot;val2&quot;&gt;text&lt;/div&gt;
+
+</code></pre>
+</section>
+</section>
+
+      </div>
+    </article>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+</body>
+
+</html>

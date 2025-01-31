@@ -34,6 +34,7 @@ jobs:
       - name: Commit and push changes
         run: |
           git add documentation
+          git add lib
           git commit -m "Update generated documentation"
           git push
         env:
