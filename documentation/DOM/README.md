@@ -4,5 +4,6 @@ A set of functions related to DOM.
 
 ## Functions
 
-* [**fromEmmet.js**](./fromEmmet.md)
-* [**superElement.js**](./superElement.md)
+* [**superElement.min.js**](./superElement.min.md) - 
+* [**fromEmmet.js**](./fromEmmet.md) - 
+* [**superElement.js**](./superElement.md) - 
