@@ -3,6 +3,9 @@ Unescapes HTML entities in a given string.
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

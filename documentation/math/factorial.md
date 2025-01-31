@@ -3,6 +3,9 @@ Finds the factorial of a number
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

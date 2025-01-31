@@ -3,6 +3,9 @@ Returns the difference between two or more arrays.
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

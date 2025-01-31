@@ -3,6 +3,9 @@ Creates a union of arrays
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

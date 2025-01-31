@@ -3,6 +3,9 @@ Shuffles an array randomly
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

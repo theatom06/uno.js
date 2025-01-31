@@ -3,6 +3,9 @@ Capitalize the first letter of a string.
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

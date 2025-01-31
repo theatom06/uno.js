@@ -3,6 +3,9 @@ A constructor for dealing with omplex number.
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import
 
 ```js

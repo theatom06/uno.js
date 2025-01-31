@@ -3,6 +3,9 @@ Checks if a version string is a valid semver version.
 
 **Author:** theatom06 node-semver
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

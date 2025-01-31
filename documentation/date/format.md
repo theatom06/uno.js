@@ -3,6 +3,9 @@ Format dates into a given format
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

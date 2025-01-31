@@ -3,6 +3,9 @@ Checks if a version satisfies a range.
 
 **Author:** theatom06 node-semver
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

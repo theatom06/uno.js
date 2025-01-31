@@ -3,6 +3,9 @@ Increments a version string based on the release type.
 
 **Author:** theatom06 node-semver
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

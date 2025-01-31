@@ -3,6 +3,9 @@ Pads the current string with another string until the resulting string reaches t
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

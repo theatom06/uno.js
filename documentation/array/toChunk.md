@@ -3,6 +3,9 @@ Splits an array into chunks of a specified size.
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

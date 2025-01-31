@@ -3,6 +3,9 @@ Create an element from an emmet string
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

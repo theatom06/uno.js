@@ -3,6 +3,9 @@ Generates cryptographically secure random bytes. Uses the Web Crypto API if avai
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

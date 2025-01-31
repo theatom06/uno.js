@@ -3,6 +3,9 @@ Converts a string to camelcase.
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

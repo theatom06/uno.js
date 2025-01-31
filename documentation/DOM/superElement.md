@@ -3,6 +3,9 @@ SuperElement is a class that wraps around the native DOM element and provides a 
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import
 
 ```js

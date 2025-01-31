@@ -3,6 +3,9 @@ Compares two version strings and returns true if the first version is less than 
 
 **Author:** theatom06 node-semver
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

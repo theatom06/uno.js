@@ -3,6 +3,9 @@ Escapes special characters in a string to prevent XSS attacks via HTML.
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

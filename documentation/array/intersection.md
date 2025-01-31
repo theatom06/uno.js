@@ -3,6 +3,9 @@ Finds the intersection between two arra
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

@@ -3,6 +3,9 @@ Truncate a string to a certain length and add '...' to the end
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

@@ -3,6 +3,9 @@ Find the LCM(Least Common Multiple) of two numbers
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

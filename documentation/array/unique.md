@@ -3,6 +3,9 @@ Removes all duplicates from a array
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

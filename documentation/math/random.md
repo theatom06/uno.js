@@ -3,6 +3,9 @@ Generates a cryptographically secure random integer in the range [min, max).
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

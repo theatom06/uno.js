@@ -3,6 +3,9 @@ Convert a string to snake case.
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js

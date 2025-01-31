@@ -3,6 +3,9 @@ Find the GCD(Greatest Common Divisor) of two numbers
 
 **Author:** theatom06
 
+## Table of Contents
+[[toc]]
+
 ## Import 
 
 ```js
