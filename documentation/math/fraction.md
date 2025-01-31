@@ -9,11 +9,11 @@ A constructor for dealing with fractions.
 ## Import
 
 ```js
-import fraction from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/fraction.js';
+import fraction from 'https://uno.js.org/lib/math/fraction.js';
 ```
 and compresed version
 ```js
-import fraction from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/fraction.min.js';
+import fraction from 'https://uno.js.org/lib/math/fraction.min.js';
 ```
 
 ## Code

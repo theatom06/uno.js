@@ -9,11 +9,11 @@ Generates a cryptographically secure random integer in the range [min, max).
 ## Import 
 
 ```js
-import random from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/random.js';
+import random from 'https://uno.js.org/lib/math/random.js';
 ```
 and compresed version
 ```js
-import random from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/random.min.js';
+import random from 'https://uno.js.org/lib/math/random.min.js';
 ```
 
 ## Code

@@ -9,11 +9,11 @@ Convert a string to snake case.
 ## Import 
 
 ```js
-import snakeCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/snakeCase.js';
+import snakeCase from 'https://uno.js.org/lib/string/snakeCase.js';
 ```
 and compresed version
 ```js
-import snakeCase from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/snakeCase.min.js';
+import snakeCase from 'https://uno.js.org/lib/string/snakeCase.min.js';
 ```
 
 ## Code

@@ -9,11 +9,11 @@ Find the LCM(Least Common Multiple) of two numbers
 ## Import 
 
 ```js
-import LCM from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/LCM.js';
+import LCM from 'https://uno.js.org/lib/math/LCM.js';
 ```
 and compresed version
 ```js
-import LCM from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/LCM.min.js';
+import LCM from 'https://uno.js.org/lib/math/LCM.min.js';
 ```
 
 ## Code

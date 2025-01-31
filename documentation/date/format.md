@@ -9,11 +9,11 @@ Format dates into a given format
 ## Import 
 
 ```js
-import format from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/date/format.js';
+import format from 'https://uno.js.org/lib/date/format.js';
 ```
 and compresed version
 ```js
-import format from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/date/format.min.js';
+import format from 'https://uno.js.org/lib/date/format.min.js';
 ```
 
 ## Code

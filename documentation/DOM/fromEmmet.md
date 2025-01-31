@@ -9,11 +9,11 @@ Create an element from an emmet string
 ## Import 
 
 ```js
-import fromEmmet from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/fromEmmet.js';
+import fromEmmet from 'https://uno.js.org/lib/DOM/fromEmmet.js';
 ```
 and compresed version
 ```js
-import fromEmmet from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/fromEmmet.min.js';
+import fromEmmet from 'https://uno.js.org/lib/DOM/fromEmmet.min.js';
 ```
 
 ## Code

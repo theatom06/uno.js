@@ -9,11 +9,11 @@ Checks if a version satisfies a range.
 ## Import 
 
 ```js
-import satisfies from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/semver/satisfies.js';
+import satisfies from 'https://uno.js.org/lib/semver/satisfies.js';
 ```
 and compresed version
 ```js
-import satisfies from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/semver/satisfies.min.js';
+import satisfies from 'https://uno.js.org/lib/semver/satisfies.min.js';
 ```
 
 ## Code

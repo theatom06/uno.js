@@ -9,11 +9,11 @@ Finds the intersection between two arra
 ## Import 
 
 ```js
-import intersection from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/intersection.js';
+import intersection from 'https://uno.js.org/lib/array/intersection.js';
 ```
 and compresed version
 ```js
-import intersection from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/intersection.min.js';
+import intersection from 'https://uno.js.org/lib/array/intersection.min.js';
 ```
 
 ## Code
