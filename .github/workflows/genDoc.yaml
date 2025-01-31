@@ -20,6 +20,9 @@ jobs:
       - name: Install jsdoc-to-markdown globally
         run: bun add -g jsdoc-to-markdown
 
+      - name: Install all dependencies
+        run: bun install
+
       - name: Run documentation generation script
         run: bun ./genDoc/index.ts
       
