@@ -20,11 +20,14 @@ jobs:
       - name: Install jsdoc-to-markdown globally
         run: bun add -g jsdoc-to-markdown markdown-it markdown-it-anchor markdown-it-header-sections markdown-it-highlightjs markdown-it-table-of-contents
 
-      - name: Dependencies
-        run: bun install --production
+      - name: change Directory
+        run: cd genDoc
+
+      - name: Install jsdoc-to-markdown locally
+        run: bun add jsdoc-to-markdown markdown-it markdown-it-anchor markdown-it-header-sections markdown-it-highlightjs markdown-it-table-of-contents
 
       - name: Run documentation generation script
-        run: bun ./genDoc/index.ts
+        run: bun run index.js
       
       - name: Configure Git
         run: |
