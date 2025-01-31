@@ -9,11 +9,11 @@ Parses a version string and returns metadata about its components.
 ## Import 
 
 ```js
-import semver from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/semver/semver.js';
+import semver from 'https://uno.js.org/lib/semver/semver.js';
 ```
 and compresed version
 ```js
-import semver from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/semver/semver.min.js';
+import semver from 'https://uno.js.org/lib/semver/semver.min.js';
 ```
 
 ## Code

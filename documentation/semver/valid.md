@@ -9,11 +9,11 @@ Checks if a version string is a valid semver version.
 ## Import 
 
 ```js
-import valid from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/semver/valid.js';
+import valid from 'https://uno.js.org/lib/semver/valid.js';
 ```
 and compresed version
 ```js
-import valid from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/semver/valid.min.js';
+import valid from 'https://uno.js.org/lib/semver/valid.min.js';
 ```
 
 ## Code

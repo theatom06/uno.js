@@ -9,11 +9,11 @@ SuperElement is a class that wraps around the native DOM element and provides a 
 ## Import
 
 ```js
-import superElement from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/superElement.js';
+import superElement from 'https://uno.js.org/lib/DOM/superElement.js';
 ```
 and compresed version
 ```js
-import superElement from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/DOM/superElement.min.js';
+import superElement from 'https://uno.js.org/lib/DOM/superElement.min.js';
 ```
 
 ## Code

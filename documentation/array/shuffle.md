@@ -9,11 +9,11 @@ Shuffles an array randomly
 ## Import 
 
 ```js
-import shuffle from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/shuffle.js';
+import shuffle from 'https://uno.js.org/lib/array/shuffle.js';
 ```
 and compresed version
 ```js
-import shuffle from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/shuffle.min.js';
+import shuffle from 'https://uno.js.org/lib/array/shuffle.min.js';
 ```
 
 ## Code

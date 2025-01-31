@@ -9,11 +9,11 @@ Escapes special characters in a string to prevent XSS attacks via HTML.
 ## Import 
 
 ```js
-import escapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/escapeHTML.js';
+import escapeHTML from 'https://uno.js.org/lib/string/escapeHTML.js';
 ```
 and compresed version
 ```js
-import escapeHTML from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/escapeHTML.min.js';
+import escapeHTML from 'https://uno.js.org/lib/string/escapeHTML.min.js';
 ```
 
 ## Code

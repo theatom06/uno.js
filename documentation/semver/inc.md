@@ -9,11 +9,11 @@ Increments a version string based on the release type.
 ## Import 
 
 ```js
-import inc from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/semver/inc.js';
+import inc from 'https://uno.js.org/lib/semver/inc.js';
 ```
 and compresed version
 ```js
-import inc from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/semver/inc.min.js';
+import inc from 'https://uno.js.org/lib/semver/inc.min.js';
 ```
 
 ## Code

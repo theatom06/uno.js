@@ -9,11 +9,11 @@ Find the GCD(Greatest Common Divisor) of two numbers
 ## Import 
 
 ```js
-import GCD from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/GCD.js';
+import GCD from 'https://uno.js.org/lib/math/GCD.js';
 ```
 and compresed version
 ```js
-import GCD from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/GCD.min.js';
+import GCD from 'https://uno.js.org/lib/math/GCD.min.js';
 ```
 
 ## Code

@@ -9,11 +9,11 @@ A constructor for dealing with omplex number.
 ## Import
 
 ```js
-import complexNumber from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/complexNumber.js';
+import complexNumber from 'https://uno.js.org/lib/math/complexNumber.js';
 ```
 and compresed version
 ```js
-import complexNumber from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/math/complexNumber.min.js';
+import complexNumber from 'https://uno.js.org/lib/math/complexNumber.min.js';
 ```
 
 ## Code

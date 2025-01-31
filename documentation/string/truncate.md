@@ -9,11 +9,11 @@ Truncate a string to a certain length and add '...' to the end
 ## Import 
 
 ```js
-import truncate from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/truncate.js';
+import truncate from 'https://uno.js.org/lib/string/truncate.js';
 ```
 and compresed version
 ```js
-import truncate from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/truncate.min.js';
+import truncate from 'https://uno.js.org/lib/string/truncate.min.js';
 ```
 
 ## Code

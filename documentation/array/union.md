@@ -9,11 +9,11 @@ Creates a union of arrays
 ## Import 
 
 ```js
-import union from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/union.js';
+import union from 'https://uno.js.org/lib/array/union.js';
 ```
 and compresed version
 ```js
-import union from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/array/union.min.js';
+import union from 'https://uno.js.org/lib/array/union.min.js';
 ```
 
 ## Code

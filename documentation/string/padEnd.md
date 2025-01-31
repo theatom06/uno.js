@@ -9,11 +9,11 @@ Pads the current string with another string until the resulting string reaches t
 ## Import 
 
 ```js
-import padEnd from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/padEnd.js';
+import padEnd from 'https://uno.js.org/lib/string/padEnd.js';
 ```
 and compresed version
 ```js
-import padEnd from 'https://cdn.jsdelivr.net/gh/theatom06/uno.js@main/lib/string/padEnd.min.js';
+import padEnd from 'https://uno.js.org/lib/string/padEnd.min.js';
 ```
 
 ## Code
