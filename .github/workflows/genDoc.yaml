@@ -27,7 +27,7 @@ jobs:
         run: bun add jsdoc-to-markdown markdown-it markdown-it-anchor markdown-it-header-sections markdown-it-highlightjs markdown-it-table-of-contents
 
       - name: Run documentation generation script
-        run: bun run index.js
+        run: bun run index.ts
       
       - name: Configure Git
         run: |
