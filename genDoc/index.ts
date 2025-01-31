@@ -88,7 +88,7 @@ async function handleFunctions(doc: Record<string, any>, filePath: string) {
         entrypoints: [filePath],
         minify: true,
         packages: "bundle",
-        outdir: libDir,
+        outdir: path.join(libDir, path.dirname(relativeFilePath)),
         naming: '[name].min.[ext]',
     })
 }
@@ -169,11 +169,11 @@ async function handleConstructs(doc: any, filePath: string) {
 
 async function processFile(relativeFilePath: string) {
     const filePath = path.join(libDir, relativeFilePath);
-    console.log('   Processing file:', path.relative(libDir, filePath));
-
     if(filePath.endsWith('.min.js')) {
         return;
     }
+    
+    console.log('   Processing file:', path.relative(libDir, filePath));
 
     try {
         const jsdoc = await Bun.$`bun x jsdoc2md --json ${filePath}`.text();
