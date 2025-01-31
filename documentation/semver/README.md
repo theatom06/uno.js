@@ -4,10 +4,16 @@ A set of functions related to semver.
 
 ## Functions
 
-* [**sort.js**](./sort.md) - 
-* [**inc.js**](./inc.md) - 
-* [**lt.js**](./lt.md) - 
+* [**semver.min.js**](./semver.min.md) - 
+* [**valid.min.js**](./valid.min.md) - 
+* [**satisfies.min.js**](./satisfies.min.md) - 
+* [**gt.min.js**](./gt.min.md) - 
+* [**lt.min.js**](./lt.min.md) - 
+* [**inc.min.js**](./inc.min.md) - 
 * [**satisfies.js**](./satisfies.md) - 
+* [**gt.js**](./gt.md) - 
+* [**inc.js**](./inc.md) - 
 * [**valid.js**](./valid.md) - 
 * [**semver.js**](./semver.md) - 
-* [**gt.js**](./gt.md) - 
+* [**lt.js**](./lt.md) - 
+* [**sort.js**](./sort.md) - 

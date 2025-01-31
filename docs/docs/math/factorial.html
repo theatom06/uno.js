@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/atom-one-dark.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Uno.js Docs" />
+  <meta name="theme-color" content="#000000" />
+  <title>Uno.js</title>
+  <script type="module" crossorigin src="/assets/index-BYssil4q.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Du9_KIOI.css">
+</head>
+
+<body class="font-OpenSans h-screen bg-background text-white overflow-hidden">
+  <header class="w-full p-2 flex items-center justify-between border-b-[1px] border-gray-700 absolute top-0 bg-background">
+    <div class="flex items-center">
+      <img src="/logo.png" alt="logo" class="h-14 ">
+      <h1 class="text-3xl font-extrabold text-primary">Uno.js</h1>
+    </div>
+    <div class="flex items-center pr-2">
+      <a href="https://github.com/theatom06/uno.js">
+        <img src="/github.svg" alt="github" class="h-10 w-10 hover:h-11 hover:w-11" />
+      </a>
+    </div>
+  </header>
+  <main class="w-full flex grow h-screen pt-16">
+    <article class="grow">
+      <div class="m-auto bg-[#040316] max-w-6xl min-w-xl overflow-scroll overflow-x-hidden h-screen p-10 scroll">
+        <section id="factorial---math" tabindex="-1">
+<h1 tabindex="-1">Factorial - Math</h1>
+<p>Finds the factorial of a number</p>
+<p><strong>Author:</strong> theatom06</p>
+<section id="table-of-contents" tabindex="-1">
+<h2 tabindex="-1">Table of Contents</h2>
+<div class="table-of-contents"><ul><li><a href="#factorial---math">Factorial - Math</a><ul><li><a href="#table-of-contents">Table of Contents</a></li><li><a href="#import">Import</a></li><li><a href="#code">Code</a></li><li><a href="#parameters">Parameters</a></li><li><a href="#returns">Returns</a></li><li><a href="#examples">Examples</a></li></ul></li></ul></div>
+</section>
+<section id="import" tabindex="-1">
+<h2 tabindex="-1">Import</h2>
+<pre><code class="language-js">import factorial from 'https://uno.js.org/lib/math/factorial.js';
+</code></pre>
+<p>and compresed version</p>
+<pre><code class="language-js">import factorial from 'https://uno.js.org/lib/math/factorial.min.js';
+</code></pre>
+</section>
+<section id="code" tabindex="-1">
+<h2 tabindex="-1">Code</h2>
+<p>The raw code of the function is available here:</p>
+<pre><code class="language-js">/**
+ * Finds the factorial of a number
+ * @param {number} n The number to find the factorial of.
+ * @returns {number} The factorial of the number.
+ * @example
+ * factorial(5); // 120
+ * @author theatom06
+ */
+export default function factorial(n) {
+    if (n &lt; 0) {
+        throw new Error('factorial requires a non-negative number');
+    }
+    return n &lt;= 1 ? 1 : n * factorial(n - 1);
+}
+</code></pre>
+</section>
+<section id="parameters" tabindex="-1">
+<h2 tabindex="-1">Parameters</h2>
+<ul>
+<li><strong>n</strong> - The number to find the factorial of.</li>
+</ul>
+</section>
+<section id="returns" tabindex="-1">
+<h2 tabindex="-1">Returns</h2>
+<ul>
+<li><strong>number</strong> - The factorial of the number.</li>
+</ul>
+</section>
+<section id="examples" tabindex="-1">
+<h2 tabindex="-1">Examples</h2>
+<pre><code class="language-js">factorial(5); // 120
+
+</code></pre>
+</section>
+</section>
+
+      </div>
+    </article>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+</body>
+
+</html>

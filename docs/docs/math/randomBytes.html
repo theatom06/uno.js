@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/atom-one-dark.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Uno.js Docs" />
+  <meta name="theme-color" content="#000000" />
+  <title>Uno.js</title>
+  <script type="module" crossorigin src="/assets/index-BYssil4q.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Du9_KIOI.css">
+</head>
+
+<body class="font-OpenSans h-screen bg-background text-white overflow-hidden">
+  <header class="w-full p-2 flex items-center justify-between border-b-[1px] border-gray-700 absolute top-0 bg-background">
+    <div class="flex items-center">
+      <img src="/logo.png" alt="logo" class="h-14 ">
+      <h1 class="text-3xl font-extrabold text-primary">Uno.js</h1>
+    </div>
+    <div class="flex items-center pr-2">
+      <a href="https://github.com/theatom06/uno.js">
+        <img src="/github.svg" alt="github" class="h-10 w-10 hover:h-11 hover:w-11" />
+      </a>
+    </div>
+  </header>
+  <main class="w-full flex grow h-screen pt-16">
+    <article class="grow">
+      <div class="m-auto bg-[#040316] max-w-6xl min-w-xl overflow-scroll overflow-x-hidden h-screen p-10 scroll">
+        <section id="randombytes---math" tabindex="-1">
+<h1 tabindex="-1">RandomBytes - Math</h1>
+<p>Generates cryptographically secure random bytes. Uses the Web Crypto API if available, otherwise falls back to Node.js.</p>
+<p><strong>Author:</strong> theatom06</p>
+<section id="table-of-contents" tabindex="-1">
+<h2 tabindex="-1">Table of Contents</h2>
+<div class="table-of-contents"><ul><li><a href="#randombytes---math">RandomBytes - Math</a><ul><li><a href="#table-of-contents">Table of Contents</a></li><li><a href="#import">Import</a></li><li><a href="#code">Code</a></li><li><a href="#parameters">Parameters</a></li><li><a href="#returns">Returns</a></li><li><a href="#examples">Examples</a></li></ul></li></ul></div>
+</section>
+<section id="import" tabindex="-1">
+<h2 tabindex="-1">Import</h2>
+<pre><code class="language-js">import randomBytes from 'https://uno.js.org/lib/math/randomBytes.js';
+</code></pre>
+<p>and compresed version</p>
+<pre><code class="language-js">import randomBytes from 'https://uno.js.org/lib/math/randomBytes.min.js';
+</code></pre>
+</section>
+<section id="code" tabindex="-1">
+<h2 tabindex="-1">Code</h2>
+<p>The raw code of the function is available here:</p>
+<pre><code class="language-js">/**
+ * Generates cryptographically secure random bytes. Uses the Web Crypto API if available, otherwise falls back to Node.js.
+ * @param {number} size The number of random bytes to generate.
+ * @returns {Uint8Array} The random bytes.
+ * @example
+ * secureRandomBytes(16); //Uint8Array(11) [104, 190,  56, 142, 8, 162, 238, 236, 247, 171, 150]
+ * @author theatom06
+ */
+export default function secureRandomBytes(size) {
+    if (typeof window !== 'undefined' &amp;&amp; window.crypto &amp;&amp; window.crypto.getRandomValues) {
+        const array = new Uint8Array(size);
+        window.crypto.getRandomValues(array);
+        return array;
+    } else if (typeof require !== 'undefined') {
+        const array = new Uint8Array(size);
+        const crypto = require('crypto');
+        if (crypto.randomFillSync) {
+            crypto.randomFillSync(array);
+        } else {
+            for (let i = 0; i &lt; size; i++) {
+                array[i] = crypto.randomBytes(1)[0];
+            }
+        }
+        return array
+    } else {
+        console.warn('Secure random number generation is not supported in this environment.');
+        return new Uint8Array(size).map(() =&gt; Math.floor((Math.random() * Date.now()) % 256));
+    }
+}
+</code></pre>
+</section>
+<section id="parameters" tabindex="-1">
+<h2 tabindex="-1">Parameters</h2>
+<ul>
+<li><strong>size</strong> - The number of random bytes to generate.</li>
+</ul>
+</section>
+<section id="returns" tabindex="-1">
+<h2 tabindex="-1">Returns</h2>
+<ul>
+<li><strong>Uint8Array</strong> - The random bytes.</li>
+</ul>
+</section>
+<section id="examples" tabindex="-1">
+<h2 tabindex="-1">Examples</h2>
+<pre><code class="language-js">secureRandomBytes(16); //Uint8Array(11) [104, 190,  56, 142, 8, 162, 238, 236, 247, 171, 150]
+
+</code></pre>
+</section>
+</section>
+
+      </div>
+    </article>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+</body>
+
+</html>

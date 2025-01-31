@@ -235,7 +235,6 @@ async function processDir(dir: string) {
 
 await processDir(libDir);
 
-process.on('exit', async () => {
     await Promise.all(Object.keys(folderStructure).map(async folder => {
         const readmeContent = `# ${folder.charAt(0).toUpperCase() + folder.slice(1)}\n\n` +
             `A set of functions related to ${folder}.\n\n` +
@@ -254,7 +253,6 @@ process.on('exit', async () => {
     md.use(sections);
     
     const web = path.join( import.meta.dir, '../docs/docs/');
-    const docsDir = path.join( import.meta.dir, '../documentation');
     const template = await Bun.file(path.join(
         import.meta.dir, 'template.html')).text();
     
@@ -263,7 +261,7 @@ process.on('exit', async () => {
         return template.replace('WEBSITE', section);
     }
     
-    async function processFile(filePath: string, file: string) {
+    async function _processFile(filePath: string, file: string) {
         console.log(`Processing file: ${file}`);
         if (file.endsWith('.md')) {
             console.log(`File ${file} is a markdown file`);
@@ -296,16 +294,14 @@ process.on('exit', async () => {
                 await mkdir(path.join(web, file), { recursive: true });
                 const dirFiles = await readdir(filePath);
                 for (const dirFile of dirFiles) {
-                    await processFile(path.join(filePath, dirFile), dirFile);
+                    await _processFile(path.join(filePath, dirFile), dirFile);
                 }
             } else {
-                await processFile(filePath, file);
+                await _processFile(filePath, file);
             }
         }
     });
-    const libDir = path.join(import.meta.dir, '../lib');
     console.log('File processing completed.');
     Bun.$`cp ${libDir} ${path.join(docsDir, 'lib')}`;
 
     console.log('\nDocumentation generated successfully!');
-});
