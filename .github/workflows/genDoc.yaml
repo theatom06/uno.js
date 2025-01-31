@@ -18,10 +18,10 @@ jobs:
           bun-version: latest  # Use a specific version if needed
 
       - name: Install jsdoc-to-markdown globally
-        run: bun add -g jsdoc-to-markdown
+        run: bun add -g jsdoc-to-markdown markdown-it markdown-it-anchor markdown-it-header-sections markdown-it-highlightjs markdown-it-table-of-contents
 
-      - name: Install all dependencies
-        run: bun install
+      - name: Dependencies
+        run: bun install --production
 
       - name: Run documentation generation script
         run: bun ./genDoc/index.ts
