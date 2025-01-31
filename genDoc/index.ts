@@ -237,7 +237,6 @@ process.on('exit', async () => {
     }));
 
     Bun.$`bun run ./genWebsite.ts`;
-    Bun.$`cp ${libDir} ${path.join(docsDir, 'lib')}`;
 
     console.log('\nDocumentation generated successfully!');
 });

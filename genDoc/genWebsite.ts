@@ -66,4 +66,6 @@ await readdir(docsDir).then(async (files) => {
         }
     }
 });
+const libDir = path.join(import.meta.dir, '../lib');
 console.log('File processing completed.');
+Bun.$`cp ${libDir} ${path.join(docsDir, 'lib')}`;
