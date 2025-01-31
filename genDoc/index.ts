@@ -152,7 +152,7 @@ async function handleConstructs(doc: any, filePath: string) {
 
         md = temp.join('## ');
 
-        await Bun.file(path.join(docsDir, relativeFilePath.replace('.js', '.md'))).write(md);
+        await Bun.file(path.join(docsDir, relativeFilePath.replace('.js', '.md').replace('.min', ''))).write(md);
 
     } catch (error) {
         console.log(`Error for file ${filePath} : ${error}`);

@@ -8,12 +8,12 @@ A set of functions related to semver.
 * [**valid.min.js**](./valid.min.md) - 
 * [**satisfies.min.js**](./satisfies.min.md) - 
 * [**gt.min.js**](./gt.min.md) - 
-* [**lt.min.js**](./lt.min.md) - 
 * [**inc.min.js**](./inc.min.md) - 
-* [**satisfies.js**](./satisfies.md) - 
+* [**lt.min.js**](./lt.min.md) - 
 * [**gt.js**](./gt.md) - 
+* [**lt.js**](./lt.md) - 
+* [**satisfies.js**](./satisfies.md) - 
 * [**inc.js**](./inc.md) - 
 * [**valid.js**](./valid.md) - 
 * [**semver.js**](./semver.md) - 
-* [**lt.js**](./lt.md) - 
 * [**sort.js**](./sort.md) - 
