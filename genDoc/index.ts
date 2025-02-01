@@ -95,6 +95,8 @@ async function handleFunctions(doc: Record<string, any>, filePath: string) {
 
 async function handleConstructs(doc: any, filePath: string) {
     const relativeFilePath = path.relative(libDir, filePath);
+  
+if(relativeFilePath.endsWith('.min.js')){return;}
 
     let md = constructTemplate
 
