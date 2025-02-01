@@ -7,10 +7,10 @@ The documentation for Uno.js is automatically generated from the source code, en
 
 Please note that this repository serves as a mono repo for the Uno.js library. If you need documentation for a particular function, you can visit the [Documentation](https://github.com/theatom06/uno.js/blob/main/documentation/README.md) section.
 
-The repository consists of four main directories:
+The repository consists of fiv main directories:
 
 - `documentation`: Contains the comprehensive library documentation.
 - `lib`: Contains the library's source code.
-- `genDocs`: Houses the documentation generator for the library.
-- `docs`: Contains the documentation website, currently under construction.
-
+- `genDocs`: Houses the documentation and website generator for the library.
+- `docs`: Contains the documentation website.
+- `website-dev`: Contains the source code for the website 
