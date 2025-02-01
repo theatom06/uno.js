@@ -17,7 +17,9 @@ The Syntax for importing any FUNCTION of any TYPE is as follows:
 import FUNCTION from 'https://uno.js.org/lib/TYPE/FUNCTION';
 ```
 
-And the documentation is [here](https://uno.js.org/docs/TYPE/FUNCTION).
+And the documentation is ```
+https://uno.js.org/docs/TYPE/FUNCTION
+```
 
 
 **Don't want to use a CDN?** You can head over to the Documentation of that function and copy the code from there. 
