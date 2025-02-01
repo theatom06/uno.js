@@ -226,6 +226,7 @@ async function processDir(dir: string) {
         if (isDirectory) {
             await processDir(filePath);
         } else {
+            if(file.endsWith('.min.js')){return;}
             await processFile(path.relative(libDir, filePath));
             folderStructure[path.relative(libDir, dir)].push({
                 file: file,
@@ -241,7 +242,7 @@ await processDir(libDir);
         const readmeContent = `# ${folder.charAt(0).toUpperCase() + folder.slice(1)}\n\n` +
             `A set of functions related to ${folder}.\n\n` +
             `## Functions\n\n` +
-            folderStructure[folder].map((file: any) => `* [**${file.file}**](./${file.file.replace('.js', '.md')}) - ${file.description}`).join('\n') + '\n';
+            folderStructure[folder].map((file: any) => `* [**${file.file}**](./${file.file.replace('.js', '.md')})`).join('\n') + '\n';
         const readmePath = path.join(docsDir, folder, 'README.md');
         await Bun.file(readmePath).write(readmeContent);
         console.log('   Generated README file:', path.relative(docsDir, readmePath));
