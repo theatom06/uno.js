@@ -1,0 +1,26 @@
+{
+  "name": "valid",
+  "category": "semver",
+  "description": "Checks if a version string is a valid semver version.",
+  "author": "theatom06 node-semver",
+  "file": "valid.js",
+  "minFile": "valid.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/semver/valid.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/semver/valid.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/semver/valid.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/semver/valid.md",
+    "html": "https://uno.js.org/docs/semver/valid.html"
+  },
+  
+  "params": [[{"name":"version","type":"string","description":"The version string to check."}]],
+  "returns": [[{"type":"Boolean","description":"`true` if the version is valid, `false` otherwise."}]],
+  "examples": [["valid('1.2.3-alpha+build'); // Output: true"]],
+  "code": "function semver(version) {\n    let metadata = {\n        version,\n        major: null,\n        minor: null,\n        patch: null,\n        preRelease: null,\n        buildInfo: null,\n        range: '='\n    };\n\n    if (version.includes('+')) [version, metadata.buildInfo] = version.split('+');\n\n    if (version.includes('-')) [version, metadata.preRelease] = version.split('-');\n\n    const parseVersion = (ver) => ver.split('.').map(num => isNaN(Number(num)) ? null : Number(num));\n\n    if (version.startsWith('^')) {\n        metadata.range = '^';\n        version = version.slice(1);\n    } else if (version.startsWith('>=')) {\n        metadata.range = '>=';\n        version = version.slice(2);\n    } else if (version.startsWith('<=')) {\n        metadata.range = '<=';\n        version = version.slice(2);\n    }\n\n    [metadata.major, metadata.minor, metadata.patch] = parseVersion(version);\n\n    return metadata;\n}\n\n/**\n * Checks if a version string is a valid semver version.\n * @param {string} version The version string to check. \n * @returns {Boolean} `true` if the version is valid, `false` otherwise.\n * @example\n * valid('1.2.3-alpha+build'); // Output: true\n * @author theatom06 node-semver\n */\nexport default function valid(version){\n    let regex = new RegExp(/^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$/);\n    return regex.test(version);\n}",
+  "minCode": "function q(j){return new RegExp(/^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$/).test(j)}export{q as default};\n",
+  "generated": "2025-10-25T11:38:29.670Z"
+}

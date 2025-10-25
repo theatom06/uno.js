@@ -1,0 +1,26 @@
+{
+  "name": "GCD",
+  "category": "math",
+  "description": "Find the GCD(Greatest Common Divisor) of two numbers",
+  "author": "theatom06",
+  "file": "GCD.js",
+  "minFile": "GCD.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/math/GCD.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/math/GCD.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/math/GCD.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/math/GCD.md",
+    "html": "https://uno.js.org/docs/math/GCD.html"
+  },
+  
+  "params": [[{"name":"a","type":"number","description":"First number"},{"name":"b","type":"number","description":"First number"}]],
+  "returns": [[{"type":"number","description":"The GCD of the two numbers."}]],
+  "examples": [["GCD(12, 8); // 4"]],
+  "code": "/**\n * Find the GCD(Greatest Common Divisor) of two numbers\n * @param {number} a First number\n * @param {number} b First number\n * @returns {number} The GCD of the two numbers.\n * @example\n * GCD(12, 8); // 4\n * @author theatom06\n */\nexport default function GCD(a, b) {\n    if (b === 0) {\n        return a;\n    }\n    return GCD(b, a % b);\n}",
+  "minCode": "function t(e,r){if(r===0)return e;return t(r,e%r)}export{t as default};\n",
+  "generated": "2025-10-25T11:38:28.966Z"
+}

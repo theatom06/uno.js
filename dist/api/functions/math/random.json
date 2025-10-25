@@ -1,0 +1,26 @@
+{
+  "name": "random",
+  "category": "math",
+  "description": "Generates a cryptographically secure random integer in the range [min, max).",
+  "author": "theatom06",
+  "file": "random.js",
+  "minFile": "random.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/math/random.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/math/random.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/math/random.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/math/random.md",
+    "html": "https://uno.js.org/docs/math/random.html"
+  },
+  
+  "params": [[{"name":"min","type":"number","description":"the minimum value, inclusive."},{"name":"max","type":"number","description":"the maximum value, exclusive."}]],
+  "returns": [[{"type":"number","description":"The random integer."}]],
+  "examples": [["randomInt(1, 10); // => 4"]],
+  "code": "import randomBytes from './randomBytes.js';\n\n/**\n * Generates a cryptographically secure random integer in the range [min, max).\n * @param {number} min the minimum value, inclusive.\n * @param {number} max the maximum value, exclusive.\n * @returns {number} The random integer.\n * @example\n * randomInt(1, 10); // => 4\n * @author theatom06\n */\nexport default function randomInt(min, max) {\n    const range = max - min;\n    if (range <= 0) {\n        throw new Error('The max value must be greater than the min value.');\n    }\n\n    const randomBytes = randomBytes(4);\n    const randomInt = new DataView(randomBytes.buffer).getUint32(0, true);\n    return min + (randomInt % range);\n}",
+  "minCode": "function s(e,t){let o=t-e;if(o<=0)throw Error(\"The max value must be greater than the min value.\");let r=r(4),n=new DataView(r.buffer).getUint32(0,!0);return e+n%o}export{s as default};\n",
+  "generated": "2025-10-25T11:38:29.640Z"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "factorial",
+  "category": "math",
+  "description": "Finds the factorial of a number",
+  "author": "theatom06",
+  "file": "factorial.js",
+  "minFile": "factorial.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/math/factorial.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/math/factorial.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/math/factorial.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/math/factorial.md",
+    "html": "https://uno.js.org/docs/math/factorial.html"
+  },
+  
+  "params": [[{"name":"n","type":"number","description":"The number to find the factorial of."}]],
+  "returns": [[{"type":"number","description":"The factorial of the number."}]],
+  "examples": [["factorial(5); // 120"]],
+  "code": "/**\n * Finds the factorial of a number\n * @param {number} n The number to find the factorial of.\n * @returns {number} The factorial of the number.\n * @example\n * factorial(5); // 120\n * @author theatom06\n */\nexport default function factorial(n) {\n    if (n < 0) {\n        throw new Error('factorial requires a non-negative number');\n    }\n    return n <= 1 ? 1 : n * factorial(n - 1);\n}",
+  "minCode": "function e(r){if(r<0)throw Error(\"factorial requires a non-negative number\");return r<=1?1:r*e(r-1)}export{e as default};\n",
+  "generated": "2025-10-25T11:38:29.530Z"
+}

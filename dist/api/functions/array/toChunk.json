@@ -1,0 +1,26 @@
+{
+  "name": "toChunk",
+  "category": "array",
+  "description": "Splits an array into chunks of a specified size.",
+  "author": "theatom06",
+  "file": "toChunk.js",
+  "minFile": "toChunk.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/array/toChunk.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/array/toChunk.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/array/toChunk.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/array/toChunk.md",
+    "html": "https://uno.js.org/docs/array/toChunk.html"
+  },
+  
+  "params": [[{"name":"array","type":"Array.<any>","description":""},{"name":"size","type":"number","description":""}]],
+  "returns": [[{"type":"Array.<Array.<any>>","description":""}]],
+  "examples": [["chunk([1, 2, 3, 4, 5], 2) // [[1, 2], [3, 4], [5]]"]],
+  "code": "/**\n * Splits an array into chunks of a specified size.\n * @param {any[]} array\n * @param {number} size\n * @returns {any[][]}\n * @example\n * chunk([1, 2, 3, 4, 5], 2) // [[1, 2], [3, 4], [5]]\n * @author theatom06\n */\nexport default function chunk(array, size) {\n    const result = [];\n    for (let i = 0; i < array.length; i += size) {\n        result.push(array.slice(i, i + size));\n    }\n    return result;\n}",
+  "minCode": "function r(a,n){let t=[];for(let e=0;e<a.length;e+=n)t.push(a.slice(e,e+n));return t}export{r as default};\n",
+  "generated": "2025-10-25T11:38:29.692Z"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "padEnd",
+  "category": "string",
+  "description": "Pads the current string with another string until the resulting string reaches the given length.",
+  "author": "theatom06",
+  "file": "padEnd.js",
+  "minFile": "padEnd.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/string/padEnd.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/padEnd.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/padEnd.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/string/padEnd.md",
+    "html": "https://uno.js.org/docs/string/padEnd.html"
+  },
+  
+  "params": [[{"name":"str","type":"string","description":"The string to pad."},{"name":"targetLength","type":"number","description":"The length of the resulting string once the current string has been padded."},{"name":"padString","type":"string","description":"The string to pad the current string with."}]],
+  "returns": [[{"type":"string","description":"The padded string."}]],
+  "examples": [["padEnd('5', 2, '0'); // '50'"]],
+  "code": "/**\n * Pads the current string with another string until the resulting string reaches the given length.\n * @param {string} str The string to pad.\n * @param {number} targetLength The length of the resulting string once the current string has been padded.\n * @param {string} padString The string to pad the current string with.\n * @returns {string} The padded string.\n * @example\n * padEnd('5', 2, '0'); // '50'\n * @author theatom06\n */\nexport default function padEnd(str, targetLength, padString) {\n    return str.padEnd(targetLength, padString);\n}",
+  "minCode": "function n(t,e,r){return t.padEnd(e,r)}export{n as default};\n",
+  "generated": "2025-10-25T11:38:29.677Z"
+}

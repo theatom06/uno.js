@@ -1,0 +1,26 @@
+{
+  "name": "satisfies",
+  "category": "semver",
+  "description": "Checks if a version satisfies a range.",
+  "author": "theatom06 node-semver",
+  "file": "satisfies.js",
+  "minFile": "satisfies.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/semver/satisfies.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/semver/satisfies.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/semver/satisfies.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/semver/satisfies.md",
+    "html": "https://uno.js.org/docs/semver/satisfies.html"
+  },
+  
+  "params": [[{"name":"version","type":"string","description":"The version to check"},{"name":"rangeVersion","type":"string","description":"The range to check against"}]],
+  "returns": [[{"type":"Boolean","description":"True if the version satisfies the range, false otherwise."}]],
+  "examples": [["satisfies('1.2.3', '>=1.2.3'); // Output"]],
+  "code": "function semver(version) {\n    let metadata = {\n        version,\n        major: null,\n        minor: null,\n        patch: null,\n        preRelease: null,\n        buildInfo: null,\n        range: '='\n    };\n\n    if (version.includes('+')) [version, metadata.buildInfo] = version.split('+');\n\n    if (version.includes('-')) [version, metadata.preRelease] = version.split('-');\n\n    const parseVersion = (ver) => ver.split('.').map(num => isNaN(Number(num)) ? null : Number(num));\n\n    if (version.startsWith('^')) {\n        metadata.range = '^';\n        version = version.slice(1);\n    } else if (version.startsWith('>=')) {\n        metadata.range = '>=';\n        version = version.slice(2);\n    } else if (version.startsWith('<=')) {\n        metadata.range = '<=';\n        version = version.slice(2);\n    }\n\n    [metadata.major, metadata.minor, metadata.patch] = parseVersion(version);\n\n    return metadata;\n}\n\n/**\n * Checks if a version satisfies a range.\n * @param {string} version The version to check\n * @param {string} rangeVersion The range to check against\n * @returns {Boolean} True if the version satisfies the range, false otherwise.\n * @example\n * satisfies('1.2.3', '>=1.2.3'); // Output\n * @author theatom06 node-semver\n */\nexport default function satisfies(version, rangeVersion) {\n    let { major, minor, patch, preRelease, buildInfo } = semver(version);\n    let { major: rangeMajor, minor: rangeMinor, patch: rangePatch, range } = semver(rangeVersion);\n\n\n    switch (range) {\n        case '=':\n            return major === rangeMajor && minor === rangeMinor && patch === rangePatch;\n        case '^':\n            return major === rangeMajor && minor >= rangeMinor;\n        case '>=':\n            return major >= rangeMajor;\n        case '<=':\n            return major <= rangeMajor;\n        default:\n            return false;\n    }\n}",
+  "minCode": "function F(b){let q={version:b,major:null,minor:null,patch:null,preRelease:null,buildInfo:null,range:\"=\"};if(b.includes(\"+\"))[b,q.buildInfo]=b.split(\"+\");if(b.includes(\"-\"))[b,q.preRelease]=b.split(\"-\");let y=(z)=>z.split(\".\").map((A)=>isNaN(Number(A))?null:Number(A));if(b.startsWith(\"^\"))q.range=\"^\",b=b.slice(1);else if(b.startsWith(\">=\"))q.range=\">=\",b=b.slice(2);else if(b.startsWith(\"<=\"))q.range=\"<=\",b=b.slice(2);return[q.major,q.minor,q.patch]=y(b),q}function I(b,q){let{major:y,minor:z,patch:A,preRelease:J,buildInfo:K}=F(b),{major:D,minor:E,patch:G,range:H}=F(q);switch(H){case\"=\":return y===D&&z===E&&A===G;case\"^\":return y===D&&z>=E;case\">=\":return y>=D;case\"<=\":return y<=D;default:return!1}}export{I as default};\n",
+  "generated": "2025-10-25T11:38:29.560Z"
+}

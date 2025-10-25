@@ -1,0 +1,26 @@
+{
+  "name": "escapeHTML",
+  "category": "string",
+  "description": "Escapes special characters in a string to prevent XSS attacks via HTML.",
+  "author": "theatom06",
+  "file": "escapeHTML.js",
+  "minFile": "escapeHTML.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/string/escapeHTML.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/escapeHTML.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/escapeHTML.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/string/escapeHTML.md",
+    "html": "https://uno.js.org/docs/string/escapeHTML.html"
+  },
+  
+  "params": [[{"name":"str","type":"string","description":"The string to escape."}]],
+  "returns": [[{"type":"string","description":"The escaped string."}]],
+  "examples": [["escapeHTML('<script>alert(\"xss\");</script>'); // '&lt;script&gt;alert(\"xss\");&lt;/script&gt;'"]],
+  "code": "/**\n * Escapes special characters in a string to prevent XSS attacks via HTML.\n * @param {string} str The string to escape.\n * @returns {string} The escaped string.\n * @example\n * escapeHTML('<script>alert(\"xss\");</script>'); // '&lt;script&gt;alert(\"xss\");&lt;/script&gt;'\n * @author theatom06\n */\nexport default function escapeHTML(str) {\n    const escapeChars = {\n        '&': '&amp;',\n        '<': '&lt;',\n        '>': '&gt;',\n        '\"': '&quot;',\n        \"'\": '&#39;'\n    };\n    return str.replace(/[&<>\"']/g, char => escapeChars[char]);\n}",
+  "minCode": "function a(t){let e={\"&\":\"&amp;\",\"<\":\"&lt;\",\">\":\"&gt;\",'\"':\"&quot;\",\"'\":\"&#39;\"};return t.replace(/[&<>\"']/g,(s)=>e[s])}export{a as default};\n",
+  "generated": "2025-10-25T11:38:29.657Z"
+}

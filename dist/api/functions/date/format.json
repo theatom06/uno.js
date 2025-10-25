@@ -1,0 +1,26 @@
+{
+  "name": "format",
+  "category": "date",
+  "description": "Format dates into a given format",
+  "author": "theatom06",
+  "file": "format.js",
+  "minFile": "format.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/date/format.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/date/format.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/date/format.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/date/format.md",
+    "html": "https://uno.js.org/docs/date/format.html"
+  },
+  
+  "params": [[{"name":"date","type":"Date","description":"The date to format."},{"name":"format","type":"string","description":"The format to format the date into."}]],
+  "returns": [[{"type":"string","description":"The formatted date."}]],
+  "examples": [["formatDate(new Date(), 'MM/DD/YYYY HH:mm:ss'); // '01/01/1970 00:00:00'"]],
+  "code": "/**\n * Format dates into a given format\n * @param {Date} date The date to format. \n * @param {string} format The format to format the date into. \n * @returns {string} The formatted date.\n * @example\n * formatDate(new Date(), 'MM/DD/YYYY HH:mm:ss'); // '01/01/1970 00:00:00'\n * @author theatom06\n */\nexport default function formatDate(date, format) {\n    const map = {\n        'MM': ('0' + (date.getMonth() + 1)).slice(-2),\n        'DD': ('0' + date.getDate()).slice(-2),\n        'YYYY': date.getFullYear(),\n        'HH': ('0' + date.getHours()).slice(-2),\n        'mm': ('0' + date.getMinutes()).slice(-2),\n        'ss': ('0' + date.getSeconds()).slice(-2)\n    };\n    return format.replace(/MM|DD|YYYY|HH|mm|ss/gi, matched => map[matched]);\n}",
+  "minCode": "function o(t,e){let a={MM:(\"0\"+(t.getMonth()+1)).slice(-2),DD:(\"0\"+t.getDate()).slice(-2),YYYY:t.getFullYear(),HH:(\"0\"+t.getHours()).slice(-2),mm:(\"0\"+t.getMinutes()).slice(-2),ss:(\"0\"+t.getSeconds()).slice(-2)};return e.replace(/MM|DD|YYYY|HH|mm|ss/gi,(r)=>a[r])}export{o as default};\n",
+  "generated": "2025-10-25T11:38:29.688Z"
+}

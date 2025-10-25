@@ -1,0 +1,26 @@
+{
+  "name": "kebabCase",
+  "category": "string",
+  "description": "Convert a string to kebab case.",
+  "author": "theatom06",
+  "file": "kebabCase.js",
+  "minFile": "kebabCase.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/string/kebabCase.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/kebabCase.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/kebabCase.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/string/kebabCase.md",
+    "html": "https://uno.js.org/docs/string/kebabCase.html"
+  },
+  
+  "params": [[{"name":"str","type":"string","description":"The string to convert."}]],
+  "returns": [[{"type":"string","description":"The kebab cased string."}]],
+  "examples": [["kebabCase('fooBar'); // 'foo-bar'"]],
+  "code": "/**\n * Convert a string to kebab case.\n * @param {string} str The string to convert.\n * @returns {string} The kebab cased string.\n * @example\n * kebabCase('fooBar'); // 'foo-bar'\n * @author theatom06\n */\nexport default function kebabCase(str) {\n    return str.replace(/\\s+/g, '-').replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();\n}",
+  "minCode": "function a(e){return e.replace(/\\s+/g,\"-\").replace(/([a-z])([A-Z])/g,\"$1-$2\").toLowerCase()}export{a as default};\n",
+  "generated": "2025-10-25T11:38:29.711Z"
+}

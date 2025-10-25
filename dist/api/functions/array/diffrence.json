@@ -1,0 +1,26 @@
+{
+  "name": "diffrence",
+  "category": "array",
+  "description": "Returns the difference between two or more arrays.",
+  "author": "theatom06",
+  "file": "diffrence.js",
+  "minFile": "diffrence.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/array/diffrence.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/array/diffrence.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/array/diffrence.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/array/diffrence.md",
+    "html": "https://uno.js.org/docs/array/diffrence.html"
+  },
+  
+  "params": [[{"name":"arrays","type":"Array.<any>","description":"The arrays to compare"}]],
+  "returns": [[{"type":"Array.<any>","description":"The difference between the arrays"}]],
+  "examples": [["difference([1, 2, 3], [2, 3, 4]) // [1]"]],
+  "code": "/**\n * Returns the difference between two or more arrays.\n * @param  {...any[]} arrays The arrays to compare\n * @returns {any[]} The difference between the arrays\n * @example\n * difference([1, 2, 3], [2, 3, 4]) // [1]\n * @author theatom06\n */\nexport default function difference(...arrays){\n    return arrays.reduce((a, b) => a.filter(c => !b.includes(c)));\n}",
+  "minCode": "function n(...e){return e.reduce((r,a)=>r.filter((t)=>!a.includes(t)))}export{n as default};\n",
+  "generated": "2025-10-25T11:38:29.561Z"
+}

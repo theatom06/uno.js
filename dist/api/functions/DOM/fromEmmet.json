@@ -1,0 +1,26 @@
+{
+  "name": "fromEmmet",
+  "category": "DOM",
+  "description": "Create an element from an emmet string",
+  "author": "theatom06",
+  "file": "fromEmmet.js",
+  "minFile": "fromEmmet.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/DOM/fromEmmet.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/DOM/fromEmmet.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/DOM/fromEmmet.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/DOM/fromEmmet.md",
+    "html": "https://uno.js.org/docs/DOM/fromEmmet.html"
+  },
+  
+  "params": [[{"name":"emmet","type":"string","description":"The emmet string."}]],
+  "returns": [[{"type":"HTMLElement","description":"The created element."}]],
+  "examples": [["fromEmmet('div#id.class1.class2[attr1=val1 attr2=val2]{text}'); // <div id=\"id\" class=\"class1 class2\" attr1=\"val1\" attr2=\"val2\">text</div>"]],
+  "code": "/**\n * Create an element from an emmet string\n * @param {string} emmet The emmet string.\n * @returns {HTMLElement} The created element.\n * @example\n * fromEmmet('div#id.class1.class2[attr1=val1 attr2=val2]{text}'); // <div id=\"id\" class=\"class1 class2\" attr1=\"val1\" attr2=\"val2\">text</div>\n * @author theatom06\n */\nexport default function fromEmmet(emmet){\n    let tagName = emmet.split(/[#.]/)[0];\n    let id = emmet.match(/#([^.]+)/);\n    let classes = emmet.match(/\\.[^.#\\[]+/g);\n    let attributes = emmet.match(/\\[[^\\]]+\\]/g);\n    let text = emmet.match(/{[^}]+}/);\n    let element = document.createElement(tagName);\n    if(id)\n        element.id = id[1];\n    if(classes)\n        element.classList.add(...classes.map(c => c.slice(1)));\n    if(attributes)\n        attributes.forEach(a => {\n            let [name, value] = a.slice(1, -1).split('=');\n            element.setAttribute(name, value);\n        });\n    if(text)\n        element.textContent = text[0].slice(1, -1);\n\n    return element;\n}",
+  "minCode": "function d(t){let m=t.split(/[#.]/)[0],l=t.match(/#([^.]+)/),s=t.match(/\\.[^.#\\[]+/g),i=t.match(/\\[[^\\]]+\\]/g),r=t.match(/{[^}]+}/),e=document.createElement(m);if(l)e.id=l[1];if(s)e.classList.add(...s.map((a)=>a.slice(1)));if(i)i.forEach((a)=>{let[c,n]=a.slice(1,-1).split(\"=\");e.setAttribute(c,n)});if(r)e.textContent=r[0].slice(1,-1);return e}export{d as default};\n",
+  "generated": "2025-10-25T11:38:29.670Z"
+}

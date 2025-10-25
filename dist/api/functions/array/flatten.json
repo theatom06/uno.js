@@ -1,0 +1,26 @@
+{
+  "name": "flatten",
+  "category": "array",
+  "description": "Flattens an array recursively.",
+  "author": "theatom06",
+  "file": "flatten.js",
+  "minFile": "flatten.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/array/flatten.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/array/flatten.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/array/flatten.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/array/flatten.md",
+    "html": "https://uno.js.org/docs/array/flatten.html"
+  },
+  
+  "params": [[{"name":"array","type":"Array","description":"The array to flatten"}]],
+  "returns": [[{"type":"Array","description":"The flattened array"}]],
+  "examples": [["flatten([1, [2, [3, [4]], 5]]) // [1, 2, 3, 4, 5]"]],
+  "code": "/**\n * Flattens an array recursively.\n * @param {Array} array The array to flatten\n * @returns {Array} The flattened array\n * @example\n * flatten([1, [2, [3, [4]], 5]]) // [1, 2, 3, 4, 5]\n * @author theatom06    \n */\nexport default function flatten(array) {\n    return array.reduce((acc, val) => Array.isArray(val) ? acc.concat(flatten(val)) : acc.concat(val), []);\n}",
+  "minCode": "function t(e){return e.reduce((a,r)=>Array.isArray(r)?a.concat(t(r)):a.concat(r),[])}export{t as default};\n",
+  "generated": "2025-10-25T11:38:29.671Z"
+}

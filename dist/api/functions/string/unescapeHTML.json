@@ -1,0 +1,26 @@
+{
+  "name": "unescapeHTML",
+  "category": "string",
+  "description": "Unescapes HTML entities in a given string.",
+  "author": "theatom06",
+  "file": "unescapeHTML.js",
+  "minFile": "unescapeHTML.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/string/unescapeHTML.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/unescapeHTML.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/unescapeHTML.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/string/unescapeHTML.md",
+    "html": "https://uno.js.org/docs/string/unescapeHTML.html"
+  },
+  
+  "params": [[{"name":"str","type":"string","description":"The string containing HTML entities to be unescaped."}]],
+  "returns": [[{"type":"string","description":"The unescaped string."}]],
+  "examples": [["unescapeHTML('foo &amp; bar'); // 'foo & bar'"]],
+  "code": "/**\n * Unescapes HTML entities in a given string.\n * @example\n * unescapeHTML('foo &amp; bar'); // 'foo & bar'\n * @param {string} str The string containing HTML entities to be unescaped.\n * @returns {string} The unescaped string.\n * @author theatom06\n */\nexport default function unescapeHTML(str) {\n    const unescapeChars = {\n        '&amp;': '&',\n        '&lt;': '<',\n        '&gt;': '>',\n        '&quot;': '\"',\n        '&#39;': \"'\"\n    };\n    return str.replace(/&(amp|lt|gt|quot|#39);/g, char => unescapeChars[char]);\n}",
+  "minCode": "function a(e){let t={\"&amp;\":\"&\",\"&lt;\":\"<\",\"&gt;\":\">\",\"&quot;\":'\"',\"&#39;\":\"'\"};return e.replace(/&(amp|lt|gt|quot|#39);/g,(n)=>t[n])}export{a as default};\n",
+  "generated": "2025-10-25T11:38:29.728Z"
+}

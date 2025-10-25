@@ -1,0 +1,26 @@
+{
+  "name": "capitalize",
+  "category": "string",
+  "description": "Capitalize the first letter of a string.",
+  "author": "theatom06",
+  "file": "capitalize.js",
+  "minFile": "capitalize.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/string/capitalize.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/capitalize.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/capitalize.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/string/capitalize.md",
+    "html": "https://uno.js.org/docs/string/capitalize.html"
+  },
+  
+  "params": [[{"name":"str","type":"string","description":"The string to capitalize."},{"name":"allWords","type":"string","description":"(optional) Capitalize the first letter of each word."}]],
+  "returns": [[{"type":"string","description":"Returns the capitalized string."}]],
+  "examples": [["capitalize('foo bar'); // 'Foo bar'"]],
+  "code": "/**\n * Capitalize the first letter of a string.\n * @param {string} str The string to capitalize.\n * @param {string} allWords (optional) Capitalize the first letter of each word.\n * @returns {string} Returns the capitalized string.\n * @example\n * capitalize('foo bar'); // 'Foo bar'\n * @author theatom06\n */\nexport default function capitalize(str, allWords = false) {\n    if (allWords) \n        return str.split(' ').map(word => capitalize(word)).join(' ');\n    \n    return str.charAt(0).toUpperCase() + str.slice(1);\n}",
+  "minCode": "function a(t,e=!1){if(e)return t.split(\" \").map((i)=>a(i)).join(\" \");return t.charAt(0).toUpperCase()+t.slice(1)}export{a as default};\n",
+  "generated": "2025-10-25T11:38:29.657Z"
+}

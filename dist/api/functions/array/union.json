@@ -1,0 +1,26 @@
+{
+  "name": "union",
+  "category": "array",
+  "description": "Creates a union of arrays",
+  "author": "theatom06",
+  "file": "union.js",
+  "minFile": "union.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/array/union.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/array/union.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/array/union.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/array/union.md",
+    "html": "https://uno.js.org/docs/array/union.html"
+  },
+  
+  "params": [[{"name":"arrays","type":"Array.<any>","description":"The arrays to combine"}]],
+  "returns": [[{"type":"Array.<any>","description":"Returns the new array of combined values"}]],
+  "examples": [["union([1, 2, 3], [2, 3, 4], [3, 4, 5]); // Returns [1, 2, 3, 4, 5]"]],
+  "code": "/**\n * Creates a union of arrays\n * @param  {...any[]} arrays The arrays to combine\n * @returns {any[]}  Returns the new array of combined values\n * @example\n * union([1, 2, 3], [2, 3, 4], [3, 4, 5]); // Returns [1, 2, 3, 4, 5]\n * @author theatom06\n */\nexport default function union(...arrays){\n    return [...new Set(arrays.flat())];\n}",
+  "minCode": "function e(...a){return[...new Set(a.flat())]}export{e as default};\n",
+  "generated": "2025-10-25T11:38:29.708Z"
+}

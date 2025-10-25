@@ -1,0 +1,43 @@
+{
+  "name": "Uno.js",
+  "description": "A JS library that exports one function per file. This API provides a quick summary of categories and functions for the website.",
+  "categories": [
+    {
+      "id": "math",
+      "title": "Math",
+      "file": "math.json",
+      "count": 5
+    },
+    {
+      "id": "string",
+      "title": "String",
+      "file": "string.json",
+      "count": 10
+    },
+    {
+      "id": "semver",
+      "title": "Semver",
+      "file": "semver.json",
+      "count": 6
+    },
+    {
+      "id": "array",
+      "title": "Array",
+      "file": "array.json",
+      "count": 7
+    },
+    {
+      "id": "DOM",
+      "title": "DOM",
+      "file": "DOM.json",
+      "count": 1
+    },
+    {
+      "id": "date",
+      "title": "Date",
+      "file": "date.json",
+      "count": 1
+    }
+  ],
+  "generated": "2025-10-25T11:38:30.385Z"
+}

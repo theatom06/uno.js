@@ -1,0 +1,26 @@
+{
+  "name": "shuffle",
+  "category": "array",
+  "description": "Shuffles an array randomly",
+  "author": "theatom06",
+  "file": "shuffle.js",
+  "minFile": "shuffle.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/array/shuffle.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/array/shuffle.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/array/shuffle.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/array/shuffle.md",
+    "html": "https://uno.js.org/docs/array/shuffle.html"
+  },
+  
+  "params": [[{"name":"array","type":"Array.<any>","description":"The array to shuffle"}]],
+  "returns": [[{"type":"Array.<any>","description":"The shuffled array"}]],
+  "examples": [["shuffle([1, 2, 3, 4, 5]) // [3, 2, 5, 1, 4]"]],
+  "code": "/**\n * Shuffles an array randomly\n * @param {any[]} array The array to shuffle\n * @returns {any[]} The shuffled array\n * @example\n * shuffle([1, 2, 3, 4, 5]) // [3, 2, 5, 1, 4]\n * @author theatom06\n */\nexport default function shuffle(array) {\n    for (let i = array.length - 1; i > 0; i--) {\n        const j = Math.floor(Math.random() * (i + 1));\n        [array[i], array[j]] = [array[j], array[i]];\n    }\n    return array;\n}",
+  "minCode": "function h(e){for(let f=e.length-1;f>0;f--){let t=Math.floor(Math.random()*(f+1));[e[f],e[t]]=[e[t],e[f]]}return e}export{h as default};\n",
+  "generated": "2025-10-25T11:38:29.667Z"
+}

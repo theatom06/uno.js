@@ -1,4 +1,6 @@
 # Uno.js Mono Repo
+[![Hack at Time](https://hackatime-badge.hackclub.com/U05J8AF58S1/uno.js)](https://hackatime-badge.hackclub.com/U05J8AF58S1/uno.js)
+
 Uno.js is a JavaScript library that offers the convenience of exporting one function per file without the need for downloading the entire library.
 
 By exporting individual functions, Uno.js allows you to import only the specific functions you require, resulting in a smaller bundle size and improved code readability.
@@ -7,7 +9,7 @@ The documentation for Uno.js is automatically generated from the source code, en
 
 Please note that this repository serves as a mono repo for the Uno.js library. If you need documentation for a particular function, you can visit the [Documentation](https://github.com/theatom06/uno.js/blob/main/documentation/README.md) section.
 
-The repository consists of fiv main directories:
+The repository consists of five main directories:
 
 - `documentation`: Contains the comprehensive library documentation.
 - `lib`: Contains the library's source code.

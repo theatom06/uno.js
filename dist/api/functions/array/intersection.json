@@ -1,0 +1,26 @@
+{
+  "name": "intersection",
+  "category": "array",
+  "description": "Finds the intersection between two arra",
+  "author": "theatom06",
+  "file": "intersection.js",
+  "minFile": "intersection.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/array/intersection.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/array/intersection.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/array/intersection.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/array/intersection.md",
+    "html": "https://uno.js.org/docs/array/intersection.html"
+  },
+  
+  "params": [[{"name":"arrays","type":"Array.<any>","description":"The arrays to compare"}]],
+  "returns": [[{"type":"Array.<any>","description":"The intersection between the arrays"}]],
+  "examples": [["intersection([1, 2, 3], [2, 3, 4]) // [2, 3]"]],
+  "code": "/**\n * Finds the intersection between two arra\n * @param  {...any[]} arrays The arrays to compare\n * @returns {any[]} The intersection between the arrays\n * @example\n * intersection([1, 2, 3], [2, 3, 4]) // [2, 3]\n * @author theatom06\n */\nexport default function intersection(...arrays){\n    let result = []\n    arrays[0].forEach(e => {\n        if(arrays.every(a => a.includes(e)))\n            result.add(e);\n    });\n    return result;\n}",
+  "minCode": "function a(...e){let t=[];return e[0].forEach((r)=>{if(e.every((n)=>n.includes(r)))t.add(r)}),t}export{a as default};\n",
+  "generated": "2025-10-25T11:38:29.530Z"
+}

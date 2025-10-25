@@ -1,0 +1,26 @@
+{
+  "name": "unique",
+  "category": "array",
+  "description": "Removes all duplicates from a array",
+  "author": "theatom06",
+  "file": "unique.js",
+  "minFile": "unique.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/array/unique.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/array/unique.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/array/unique.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/array/unique.md",
+    "html": "https://uno.js.org/docs/array/unique.html"
+  },
+  
+  "params": [[{"name":"array","type":"Array","description":"The array to remove duplicates from"}]],
+  "returns": [[{"type":"Array","description":"The array without duplicates"}]],
+  "examples": [["unique([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]"]],
+  "code": "/**\n * Removes all duplicates from a array\n * @param {Array} array The array to remove duplicates from\n * @returns {Array} The array without duplicates\n * @example\n * unique([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]\n * @author theatom06\n */\nexport default function unique(array) {\n    return [...new Set(array)];\n}",
+  "minCode": "function a(r){return[...new Set(r)]}export{a as default};\n",
+  "generated": "2025-10-25T11:38:29.550Z"
+}

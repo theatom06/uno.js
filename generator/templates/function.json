@@ -1,0 +1,26 @@
+{
+  "name": "FUNCTION_NAME",
+  "category": "CATEGORY",
+  "description": "DESCRIPTION",
+  "author": "AUTHOR",
+  "file": "FUNCTION_NAME.js",
+  "minFile": "FUNCTION_NAME.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/CATEGORY/FUNCTION_NAME.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/CATEGORY/FUNCTION_NAME.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/CATEGORY/FUNCTION_NAME.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/CATEGORY/FUNCTION_NAME.md",
+    "html": "https://uno.js.org/docs/CATEGORY/FUNCTION_NAME.html"
+  },
+  
+  "params": ["PARAMS"],
+  "returns": ["RETURNS"],
+  "examples": ["EXAMPLES"],
+  "code": CODE,
+  "minCode": MIN_CODE,
+  "generated": "TIMESTAMP"
+}

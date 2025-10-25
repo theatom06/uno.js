@@ -1,0 +1,26 @@
+{
+  "name": "lt",
+  "category": "semver",
+  "description": "Compares two version strings and returns true if the first version is less than the second.",
+  "author": "theatom06 node-semver",
+  "file": "lt.js",
+  "minFile": "lt.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/semver/lt.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/semver/lt.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/semver/lt.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/semver/lt.md",
+    "html": "https://uno.js.org/docs/semver/lt.html"
+  },
+  
+  "params": [[{"name":"version1","type":"string","description":"The first version string."},{"name":"version2","type":"string","description":"The second version string."}]],
+  "returns": [[{"type":"Boolean","description":"`true` if the first version is less than the second, `false` otherwise."}]],
+  "examples": [["lt('1.2.3', '1.2.4'); // Output: true"]],
+  "code": "function semver(version) {\n    let metadata = {\n        version,\n        major: null,\n        minor: null,\n        patch: null,\n        preRelease: null,\n        buildInfo: null,\n        range: '='\n    };\n\n    if (version.includes('+')) [version, metadata.buildInfo] = version.split('+');\n\n    if (version.includes('-')) [version, metadata.preRelease] = version.split('-');\n\n    const parseVersion = (ver) => ver.split('.').map(num => isNaN(Number(num)) ? null : Number(num));\n\n    if (version.startsWith('^')) {\n        metadata.range = '^';\n        version = version.slice(1);\n    } else if (version.startsWith('>=')) {\n        metadata.range = '>=';\n        version = version.slice(2);\n    } else if (version.startsWith('<=')) {\n        metadata.range = '<=';\n        version = version.slice(2);\n    }\n\n    [metadata.major, metadata.minor, metadata.patch] = parseVersion(version);\n\n    return metadata;\n}\n\n/**\n * Compares two version strings and returns true if the first version is less than the second.\n * @param {string} version1 The first version string. \n * @param {string} version2 The second version string.\n * @returns {Boolean} `true` if the first version is less than the second, `false` otherwise.\n * @example\n * lt('1.2.3', '1.2.4'); // Output: true\n * @author theatom06 node-semver\n */\nexport default function lt(version1, version2){\n    let v1 = semver(version1),\n        v2 = semver(version2);\n\n    if (v1.major !== v2.major) return v1.major < v2.major;\n    if (v1.minor !== v2.minor) return v1.minor < v2.minor;\n    if (v1.patch !== v2.patch) return v1.patch < v2.patch;\n\n    // Check for preRelease tags\n    if (v1.preRelease?.length || v2.preRelease?.length) {\n        if (!v1.preRelease?.length) return false;\n        if (!v2.preRelease?.length) return true;\n\n        for (let i = 0; i < Math.max(v1.preRelease.length, v2.preRelease.length); i++) {\n            const id1 = v1.preRelease[i];\n            const id2 = v2.preRelease[i];\n\n            if (id1 === undefined) return true;\n            if (id2 === undefined) return false;\n\n            if (id1 !== id2) {\n                const isNum1 = /^\\d+$/.test(id1);\n                const isNum2 = /^\\d+$/.test(id2);\n\n                if (isNum1 && isNum2) {\n                    return parseInt(id1, 10) < parseInt(id2, 10);\n                } else if (isNum1 || isNum2) {\n                    return isNum1;\n                } else {\n                    return id1 < id2;\n                }\n            }\n        }\n    }\n\n    return false;\n}",
+  "minCode": "function G(b){let y={version:b,major:null,minor:null,patch:null,preRelease:null,buildInfo:null,range:\"=\"};if(b.includes(\"+\"))[b,y.buildInfo]=b.split(\"+\");if(b.includes(\"-\"))[b,y.preRelease]=b.split(\"-\");let j=(q)=>q.split(\".\").map((z)=>isNaN(Number(z))?null:Number(z));if(b.startsWith(\"^\"))y.range=\"^\",b=b.slice(1);else if(b.startsWith(\">=\"))y.range=\">=\",b=b.slice(2);else if(b.startsWith(\"<=\"))y.range=\"<=\",b=b.slice(2);return[y.major,y.minor,y.patch]=j(b),y}function H(b,y){let j=G(b),q=G(y);if(j.major!==q.major)return j.major<q.major;if(j.minor!==q.minor)return j.minor<q.minor;if(j.patch!==q.patch)return j.patch<q.patch;if(j.preRelease?.length||q.preRelease?.length){if(!j.preRelease?.length)return!1;if(!q.preRelease?.length)return!0;for(let z=0;z<Math.max(j.preRelease.length,q.preRelease.length);z++){let A=j.preRelease[z],D=q.preRelease[z];if(A===void 0)return!0;if(D===void 0)return!1;if(A!==D){let E=/^\\d+$/.test(A),F=/^\\d+$/.test(D);if(E&&F)return parseInt(A,10)<parseInt(D,10);else if(E||F)return E;else return A<D}}}return!1}export{H as default};\n",
+  "generated": "2025-10-25T11:38:29.650Z"
+}

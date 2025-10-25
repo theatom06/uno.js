@@ -1,0 +1,26 @@
+{
+  "name": "LCM",
+  "category": "math",
+  "description": "Find the LCM(Least Common Multiple) of two numbers",
+  "author": "theatom06",
+  "file": "LCM.js",
+  "minFile": "LCM.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/math/LCM.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/math/LCM.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/math/LCM.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/math/LCM.md",
+    "html": "https://uno.js.org/docs/math/LCM.html"
+  },
+  
+  "params": [[{"name":"a","type":"number","description":"first number"},{"name":"b","type":"number","description":"Second number"}]],
+  "returns": [[{"type":"number","description":"The LCM of the two numbers."}]],
+  "examples": [["LCM(12, 15) // 60"]],
+  "code": "/**\n * Find the LCM(Least Common Multiple) of two numbers\n * @param {number} a first number\n * @param {number} b Second number\n * @returns {number} The LCM of the two numbers.\n * @example\n * LCM(12, 15) // 60\n * @author theatom06\n */\nexport default function LCM(a, b) {\n    function gcd(a, b) {\n        if (!b) return a;\n        return gcd(b, a % b);\n    }\n    return (a * b) / gcd(a, b);\n}",
+  "minCode": "function m(r,n){function t(u,e){if(!e)return u;return t(e,u%e)}return r*n/t(r,n)}export{m as default};\n",
+  "generated": "2025-10-25T11:38:29.566Z"
+}

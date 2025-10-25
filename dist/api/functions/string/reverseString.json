@@ -1,0 +1,26 @@
+{
+  "name": "reverseString",
+  "category": "string",
+  "description": "Reverse a string.",
+  "author": "theatom06",
+  "file": "reverseString.js",
+  "minFile": "reverseString.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/string/reverseString.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/reverseString.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/reverseString.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/string/reverseString.md",
+    "html": "https://uno.js.org/docs/string/reverseString.html"
+  },
+  
+  "params": [[{"name":"str","type":"string","description":"The string to reverse."}]],
+  "returns": [[{"type":"string","description":"The reversed string."}]],
+  "examples": [["reverseString('hello'); // 'olleh'"]],
+  "code": "/**\n * Reverse a string.\n * @param {string} str The string to reverse.\n * @returns {string} The reversed string.\n * @example\n * reverseString('hello'); // 'olleh'\n * @author theatom06\n */\nexport default function reverseString(str) {\n    return str.split('').reverse().join('');\n}",
+  "minCode": "function r(e){return e.split(\"\").reverse().join(\"\")}export{r as default};\n",
+  "generated": "2025-10-25T11:38:29.530Z"
+}

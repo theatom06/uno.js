@@ -1,0 +1,26 @@
+{
+  "name": "camelCase",
+  "category": "string",
+  "description": "Converts a string to camelcase.",
+  "author": "theatom06",
+  "file": "camelCase.js",
+  "minFile": "camelCase.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/string/camelCase.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/camelCase.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/camelCase.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/string/camelCase.md",
+    "html": "https://uno.js.org/docs/string/camelCase.html"
+  },
+  
+  "params": [[{"name":"str","type":"string","description":"The string to convert."}]],
+  "returns": [[{"type":"string","description":"Returns the camelcase string."}]],
+  "examples": [["camelCase('foo-bar'); // 'fooBar'"]],
+  "code": "/**\n * Converts a string to camelcase.\n * @param {string} str The string to convert.\n * @returns {string} Returns the camelcase string.\n * @example\n * camelCase('foo-bar'); // 'fooBar'\n * @author theatom06\n*/\nexport default function camelCase(str) {\n    return str.replace(/[-\\s]([a-z])/g, (m, c) => c.toUpperCase());\n}",
+  "minCode": "function a(e){return e.replace(/[-\\s]([a-z])/g,(r,t)=>t.toUpperCase())}export{a as default};\n",
+  "generated": "2025-10-25T11:38:29.645Z"
+}

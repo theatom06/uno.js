@@ -1,0 +1,26 @@
+{
+  "name": "truncate",
+  "category": "string",
+  "description": "Truncate a string to a certain length and add '...' to the end",
+  "author": "theatom06",
+  "file": "truncate.js",
+  "minFile": "truncate.min.js",
+
+  "source": {
+    "github": "https://github.com/theatom06/uno.js/blob/main/lib/string/truncate.js",
+    "cdn": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/truncate.js",
+    "cdnMin": "https://cdn.jsdelivr.net/gh/theatom06/uno.js/dist/lib/string/truncate.min.js"
+  },
+
+  "documentation": {
+    "markdown": "https://github.com/theatom06/uno.js/blob/main/documentation/string/truncate.md",
+    "html": "https://uno.js.org/docs/string/truncate.html"
+  },
+  
+  "params": [[{"name":"str","type":"string","description":"The string to truncate."},{"name":"length","type":"length","description":"The length of the truncated string."},{"name":"end","type":"string","description":"default is '...'"}]],
+  "returns": [[{"type":"string","description":"The truncated string."}]],
+  "examples": [["truncate('The quick brown fox jumps over the lazy dog', 20); // 'The quick brown fox...'"]],
+  "code": "/**\n * Truncate a string to a certain length and add '...' to the end\n * @param {string} str The string to truncate.\n * @param {length} length The length of the truncated string.\n * @param {string} end default is '...'\n * @returns {string} The truncated string.\n * @example\n * truncate('The quick brown fox jumps over the lazy dog', 20); // 'The quick brown fox...'\n * @author theatom06\n */\nexport default function truncate(str, length, end = '...') {\n    return str.length > length ? str.slice(0, length) + end : str;\n}",
+  "minCode": "function r(t,e,n=\"...\"){return t.length>e?t.slice(0,e)+n:t}export{r as default};\n",
+  "generated": "2025-10-25T11:38:29.710Z"
+}
