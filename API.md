@@ -631,6 +631,4 @@ Planned improvements to the API:
 
 ---
 
-**Last Updated**: 2024
-
 For the latest information, always refer to the [uno.js repository](https://github.com/theatom06/uno.js).
