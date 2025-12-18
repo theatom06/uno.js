@@ -64,16 +64,14 @@ uno.js/
 ├── documentation/          # Generated markdown documentation
 │   └── [category]/         # Docs organized by category
 │
-├── dist/                   # Distribution output (generated)
-│   ├── api/                # JSON API files
-│   │   ├── index.json      # Main API index
-│   │   ├── categories/     # Category summaries
-│   │   └── functions/      # Individual function metadata
-│   ├── docs/               # HTML documentation website
-│   │   └── lib/            # Source + minified JS files
-│   └── [assets]            # Website assets (CSS, JS, images)
-│
-└── website-dev/            # Development website (Vite)
+└── dist/                   # Distribution output (generated)
+    ├── api/                # JSON API files
+    │   ├── index.json      # Main API index
+    │   ├── categories/     # Category summaries
+    │   └── functions/      # Individual function metadata
+    ├── docs/               # HTML documentation website
+    │   └── lib/            # Source + minified JS files
+    └── [assets]            # Website assets (CSS, JS, images)
 ```
 
 ### Key Directories
@@ -202,10 +200,13 @@ bun install
 # Run the documentation generator
 bun generator/index.ts
 
-# Serve the documentation website locally
-cd website-dev
-bun install
-bun run dev
+# The generated website is in dist/
+# You can serve it locally with any static server
+# For example, using Python:
+python3 -m http.server 8000 --directory dist
+
+# Or using Node.js http-server:
+npx http-server dist -p 8000
 ```
 
 ### CI/CD
